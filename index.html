@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mökkiprojekti — kolme perhettä</title>
+<style>
+  :root {
+    --bg: #faf8f4;
+    --card: #ffffff;
+    --ink: #2b2620;
+    --muted: #6f675c;
+    --line: #e5dfd5;
+    --accent: #2e6e4e;
+    --accent-soft: #e8f2ec;
+    --warn-bg: #fdf3e3;
+    --warn-line: #e8c584;
+    --good: #2e6e4e;
+    --mid: #b07d18;
+    --bad: #b3432f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #201d19;
+      --card: #2a2621;
+      --ink: #ece7de;
+      --muted: #a89e8f;
+      --line: #3d382f;
+      --accent: #7fbf9c;
+      --accent-soft: #2e3b33;
+      --warn-bg: #3a3222;
+      --warn-line: #8a6d2f;
+      --good: #7fbf9c;
+      --mid: #d9a83f;
+      --bad: #e07b64;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { margin: 24px 0 8px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 24px; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+  h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+  .callout {
+    background: var(--warn-bg); border: 1px solid var(--warn-line);
+    border-radius: 10px; padding: 14px 16px; margin: 20px 0;
+  }
+  .callout strong { display: block; margin-bottom: 4px; }
+  .grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .grid.cols-3 { grid-template-columns: repeat(3, 1fr); } }
+  .card {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px;
+  }
+  .card ul { margin: 0; padding-left: 18px; }
+  .card li { margin: 4px 0; }
+  .kohde { margin: 18px 0; }
+  .kohde .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 8px; }
+  .kohde .price { font-weight: 700; color: var(--accent); font-size: 1.15rem; }
+  .kohde .perfam { color: var(--muted); font-size: 0.9rem; font-weight: 400; }
+  .tagrow { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
+  .tag {
+    background: var(--accent-soft); color: var(--accent);
+    border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; font-weight: 600;
+  }
+  .pm { display: grid; gap: 10px; grid-template-columns: 1fr; margin-top: 10px; }
+  @media (min-width: 560px) { .pm { grid-template-columns: 1fr 1fr; } }
+  .pm h4 { margin: 0 0 4px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; }
+  .pm .plus h4 { color: var(--good); }
+  .pm .minus h4 { color: var(--bad); }
+  .pm ul { margin: 0; padding-left: 18px; font-size: 0.93rem; }
+  .pm li { margin: 3px 0; }
+  a { color: var(--accent); }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; background: var(--card); font-size: 0.92rem; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { background: var(--accent-soft); font-size: 0.85rem; }
+  tr:last-child td { border-bottom: none; }
+  td.c { text-align: center; white-space: nowrap; }
+  .s-good { color: var(--good); font-weight: 700; }
+  .s-mid  { color: var(--mid);  font-weight: 700; }
+  .s-bad  { color: var(--bad);  font-weight: 700; }
+  .s-unk  { color: var(--muted); }
+  .legend { color: var(--muted); font-size: 0.85rem; margin-top: 8px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>🏝️ Mökkiprojekti</h1>
+  <p class="updated">Kolmen perheen yhteinen mökkihaku · Päivitetty 29.7.2026</p>
+</header>
+
+<p>Tälle sivulle on koottu perheiden toiveet, tähän mennessä löydetyt kohteet ja
+arvio siitä, miten kukin kohde osuu toiveisiimme. Sivu päivittyy sitä mukaa kun
+haku etenee.</p>
+
+<div class="callout">
+  <strong>⚠️ Ratkaistava ensin: talvikäyttö</strong>
+  Kaksi kolmesta perheestä toivoo talviasuttavaa mökkiä — mutta kaikki neljä
+  tämänhetkistä kohdetta ovat saarissa, joihin pääsee vain veneellä (talvella
+  kelirikon ja jäätilanteen ehdoilla). Porukan pitää linjata: riittääkö
+  <em>lämmin mökki + rajoitettu talvipääsy</em>, vai pitääkö autolla päästä
+  perille ympäri vuoden? Vastaus ratkaisee, jatketaanko näillä kohteilla vai
+  painotetaanko hakua mantereelle. Lisäkohteiden haku mantereelta on jo käynnissä.
+</div>
+
+<h2>Perheiden toiveet</h2>
+<div class="grid cols-3">
+  <div class="card">
+    <h3>Marko &amp; Elizabeth</h3>
+    <ul>
+      <li><strong>Pitkä tähtäin tärkein:</strong> paikan pitää olla muokattavissa pysyväksi kesäpaikaksi (10+ v) — tontti, rakennusoikeus, sijainti</li>
+      <li><strong>Mahdollisimman muuttovalmis</strong> — ei isoja remppoja heti (tyydyttävä kunto OK, kunhan asuttava eikä hometta; korjaukset ~5 v sisällä käy)</li>
+      <li><strong>Iso terassi</strong> ja paikkoja nauttia auringosta</li>
+      <li><strong>Sauna must</strong>; hiekkaranta/uimapaikka plussaa</li>
+      <li>Hienot näkymät = heti mökkifiilis</li>
+      <li>Meri tai järvi — kunhan vesi on uimakelpoista</li>
+      <li>Sähkön/veden puute ei este (modernit ratkaisut)</li>
+      <li>Matka: 1 h iso plussa, 2,5 h raja</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Macos + perhe</h3>
+    <ul>
+      <li>Rantatontti</li>
+      <li><strong>Talviasuttava</strong></li>
+      <li>Enintään 2,5 h Helsingistä</li>
+      <li>Yksityisyyttä</li>
+      <li>Meri mikäli mahdollista, järvi käy myös</li>
+      <li><strong>Tilaa kolmen perheen yhtäaikaiseen oleskeluun</strong> — vähintään 3 makuuhuonetta</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Casi, Janni + perhe</h3>
+    <ul>
+      <li>Ajomatka <strong>max 2 h</strong>, mieluiten 1–1,5 h</li>
+      <li><strong>Talviasuttava</strong></li>
+      <li><strong>Useampi rakennus</strong></li>
+      <li>Meri tai järvi, kunhan vettä; iso järvi käy</li>
+      <li><strong>Mereen menevät kalliot</strong> — tilaa lokoilla ja ottaa aurinkoa; "saaristolaisfiilis"</li>
+      <li>Iso sauna lähellä vettä</li>
+      <li>Nukkumapaikkoja ~4/perhe (perhepeti käy) → yhteensä ~12</li>
+      <li>Piha pihapeleille — tai upea rantakallio</li>
+      <li>Naapurit eivät näe terassille = plussaa</li>
+      <li>Tunnelma ratkaisee (arvioidaan näytöillä)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Yhteinen profiili</h2>
+<div class="card">
+  <ul>
+    <li>🚗 Ajomatka: <strong>sitova raja 2 h</strong>, sweet spot 1–1,5 h Helsingistä</li>
+    <li>🌊 Oma rantatontti; meri plussaa, iso/puhdas järvi käy kaikille</li>
+    <li>🛏️ ~12 nukkumapaikkaa / vähintään 3 mh — tilaa kolmelle perheelle yhtä aikaa</li>
+    <li>🏠 Useampi rakennus (yksityisyys + kapasiteetti)</li>
+    <li>🧖 Sauna must — iso, mielellään lähellä vettä</li>
+    <li>❄️ Talviasuttava (2/3 perheestä toivoo — ks. avoin kysymys yllä)</li>
+    <li>🔨 Muuttovalmis — ei isoja remppaprojekteja alkuun (tyydyttävä ja terve kunto käy)</li>
+    <li>💶 Budjettikatto ~350 t€ (≈117 t€/perhe kolmella jaettuna) — kalliimpaan pyyntiin voi tarjota alle</li>
+    <li>🌅 Näkymät, iso terassi, rantakalliot, yksityisyys, tunnelma</li>
+  </ul>
+</div>
+
+<h2>Kohteet</h2>
+
+<div class="card kohde">
+  <h3>1. Härkäsaari, Karjalohja (Lohja) — paras kokonaisosuma tällä hetkellä</h3>
+  <p class="price">275 000 € <span class="perfam">· ~91 700 €/perhe kolmella jaettuna</span></p>
+  <div class="tagrow">
+    <span class="tag">Lohjanjärvi</span><span class="tag">Saari</span>
+    <span class="tag">69 m² · 3h+avok</span><span class="tag">Rak. 2009</span>
+    <span class="tag">~10 makuupaikkaa</span><span class="tag">~1 h Helsingistä</span>
+  </div>
+  <p class="meta">1,02 ha oma tontti · 100 m omaa rantaa etelään · hiekkaranta + laituri ·
+  2 saunaa · kesäkeittiö · grillikatos pizzauunilla · kasvihuone · sähkö, kaivovesi,
+  suihku, pyykinpesukone · ilmalämpöpumppu + puulämmitys</p>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Muuttovalmiein: 2009 rakennettu, täysi varustelu</li>
+      <li>Ainoana lähellä 12 makuupaikan tarvetta (~10)</li>
+      <li>2 saunaa, iso terassi, hiekkaranta etelään</li>
+      <li>Nopein matka: ~1 h + lyhyt venematka</li>
+      <li>Vene mahdollisesti kaupan päälle</li>
+    </ul></div>
+    <div class="minus"><h4>Ei osu</h4><ul>
+      <li>Järvi (meri oli 2 perheen toive)</li>
+      <li>Vain 2 varsinaista makuuhuonetta</li>
+      <li>Saari → talvipääsy rajoitettu</li>
+    </ul></div>
+  </div>
+  <p><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/16823888">Ilmoitus Oikotiellä →</a></p>
+</div>
+
+<div class="card kohde">
+  <h3>2. Kalvön, Porvoo — laadukkain, meren äärellä</h3>
+  <p class="price">279 000 € <span class="perfam">· ~93 000 €/perhe kolmella jaettuna</span></p>
+  <div class="tagrow">
+    <span class="tag">Meri</span><span class="tag">Saari</span>
+    <span class="tag">49 m² + parvi</span><span class="tag">Rak. 2012 · kunto hyvä</span>
+    <span class="tag">Vierasmökki 23 m²</span><span class="tag">~1–1,5 h</span>
+  </div>
+  <p class="meta">2,06 ha oma tontti · 50 m omaa merenrantaa · hirsimökki · sauna 18 m² ·
+  kesäkeittiö 30 m² · poreamme · myydään kalustettuna · ilmalämpöpumppu ·
+  merivesisuodatus + jätevesipuhdistamo</p>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Paras kunto — heti käyttövalmis, kalustettuna</li>
+      <li>Meri + saaristolaisfiilis</li>
+      <li>Useampi rakennus: päämökki, vierasmökki, sauna, kesäkeittiö</li>
+      <li>Yksityisin: 2 ha omaa saarenosaa</li>
+      <li>Itäterassi + poreamme</li>
+    </ul></div>
+    <div class="minus"><h4>Ei osu</h4><ul>
+      <li>Kallein; pienin päämökki (1 mh + parvi)</li>
+      <li>Rantaviivaa vain ~50 m</li>
+      <li>Saari → talvipääsy rajoitettu</li>
+      <li>Nukkumapaikat ~12 tarpeeseen epävarmat</li>
+    </ul></div>
+  </div>
+  <p><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/24432469">Ilmoitus Oikotiellä →</a></p>
+</div>
+
+<div class="card kohde">
+  <h3>3. Myssholmen, Loviisa — halvin, suurin kehitysvara</h3>
+  <p class="price">145 000 € <span class="perfam">· ~48 300 €/perhe kolmella jaettuna</span></p>
+  <div class="tagrow">
+    <span class="tag">Meri</span><span class="tag">Saari</span>
+    <span class="tag">53 m² · 2h+k</span><span class="tag">Rak. 1946 · kunto tyydyttävä</span>
+    <span class="tag">~1,5 h + vene</span>
+  </div>
+  <p class="meta">3 450 m² oma tontti · kallioranta + pieni hiekkaranta (~100 m) · syvä vesi,
+  laituri · hirsisauna ~20 m² · naapuritontti luonnonsuojelualue ·
+  rakennusoikeutta 200 m², josta käytössä vain ~73 m² (mökkiä saa laajentaa 120 m²:iin)</p>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Hinta — matalin kynnys lähteä kokeilemaan</li>
+      <li>Mereen menevät kalliot + aito saaristolaisfiilis</li>
+      <li>Suurin dokumentoitu laajennusvara (~127 m² käyttämättä)</li>
+      <li>Yksityisyys: naapurina suojelualue</li>
+    </ul></div>
+    <div class="minus"><h4>Ei osu</h4><ul>
+      <li>2h+k ei riitä kolmelle perheelle yhtä aikaa</li>
+      <li>Vanhin ja vaatimattomin — kunto tyydyttävä (vaatii kuntokartoituksen: asuttava & ei hometta?)</li>
+      <li>Sähkö/vesi epäselvä</li>
+      <li>Pisin matka; saari → talvipääsy rajoitettu</li>
+    </ul></div>
+  </div>
+  <p><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24514493">Ilmoitus Oikotiellä →</a></p>
+</div>
+
+<div class="card kohde">
+  <h3>4. Alkobben, Inkoo — eniten potentiaalia, eniten työtä</h3>
+  <p class="price">258 000 € <span class="perfam">· ~86 000 €/perhe kolmella jaettuna</span></p>
+  <div class="tagrow">
+    <span class="tag">Meri</span><span class="tag">Saari</span>
+    <span class="tag">58 m² · 3 mökkiä</span><span class="tag">Kunto välttävä</span>
+    <span class="tag">Rak.oikeus 230 m²</span><span class="tag">~1 h + vene</span>
+  </div>
+  <p class="meta">2 500 m² tontti · 160 m rantaviivaa · kolme erillistä mökkiä
+  (2 × huone+sauna, 1 × huone) · sähkö on, ei kaivoa · lyhyt venematka Inkoon satamasta</p>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Ainoa jossa aidosti 3 erillistä rakennusta — oma mökki per perhe</li>
+      <li>Eniten rantaa (160 m) ja rakennusoikeutta (230 m²)</li>
+      <li>Lähellä: ~1 h + lyhyt venematka</li>
+    </ul></div>
+    <div class="minus"><h4>Ei osu</h4><ul>
+      <li>Kunto välttävä = iso remonttiprojekti heti — vastoin muuttovalmis-toivetta</li>
+      <li>Ei kaivoa; rannan omistus epäselvä ("muu")</li>
+      <li>Saari → talvipääsy rajoitettu</li>
+    </ul></div>
+  </div>
+  <p><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/inkoo/24572182">Ilmoitus Oikotiellä →</a></p>
+</div>
+
+<h2>Sopivuus yhdellä silmäyksellä</h2>
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Kriteeri</th><th>Lohja</th><th>Porvoo</th><th>Loviisa</th><th>Inkoo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ajomatka (raja 2 h)</td><td class="c s-good">✓✓ ~1 h</td><td class="c s-good">✓</td><td class="c s-mid">~</td><td class="c s-good">✓</td></tr>
+    <tr><td>Talviasuttava + pääsy ympäri vuoden</td><td class="c s-mid">~</td><td class="c s-mid">~</td><td class="c s-bad">✗</td><td class="c s-bad">✗</td></tr>
+    <tr><td>Muuttovalmis / terve kunto</td><td class="c s-good">✓✓</td><td class="c s-good">✓✓</td><td class="c s-mid">~ kartoitus</td><td class="c s-bad">✗</td></tr>
+    <tr><td>~12 nukkumapaikkaa / ≥3 mh</td><td class="c s-mid">~ (~10)</td><td class="c s-mid">~</td><td class="c s-bad">✗</td><td class="c s-mid">~</td></tr>
+    <tr><td>Useampi rakennus</td><td class="c s-good">✓✓</td><td class="c s-good">✓✓</td><td class="c s-good">✓</td><td class="c s-good">✓✓</td></tr>
+    <tr><td>Sauna (iso, lähellä vettä)</td><td class="c s-good">✓✓ 2 kpl</td><td class="c s-good">✓</td><td class="c s-good">✓</td><td class="c s-good">✓ 2 kpl</td></tr>
+    <tr><td>Meri</td><td class="c s-bad">✗ järvi</td><td class="c s-good">✓</td><td class="c s-good">✓</td><td class="c s-good">✓</td></tr>
+    <tr><td>Rantakalliot / aurinkopaikat</td><td class="c s-mid">~</td><td class="c s-unk">?</td><td class="c s-good">✓✓</td><td class="c s-unk">?</td></tr>
+    <tr><td>Hiekkaranta / uimapaikka</td><td class="c s-good">✓✓</td><td class="c s-mid">~</td><td class="c s-good">✓ pieni</td><td class="c s-unk">?</td></tr>
+    <tr><td>Iso terassi</td><td class="c s-good">✓</td><td class="c s-good">✓ + poreamme</td><td class="c s-good">✓</td><td class="c s-unk">?</td></tr>
+    <tr><td>Yksityisyys</td><td class="c s-good">✓</td><td class="c s-good">✓✓</td><td class="c s-good">✓✓</td><td class="c s-good">✓</td></tr>
+    <tr><td>Kehityspotentiaali pitkälle tähtäimelle</td><td class="c s-mid">~</td><td class="c s-good">✓</td><td class="c s-good">✓✓</td><td class="c s-good">✓✓</td></tr>
+    <tr><td>Hinta / perhe (3 jaettuna)</td><td class="c">91 700 €</td><td class="c">93 000 €</td><td class="c">48 300 €</td><td class="c">86 000 €</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="legend">✓✓ erinomainen · ✓ hyvä · ~ osittain / epävarma · ✗ ei täyty · ? ei tietoa vielä.
+Hintoihin lisäksi varainsiirtovero 3 % sekä varustelu-/remonttibudjetti.</p>
+
+<h2>Seuraavat askeleet</h2>
+<div class="card">
+  <ul>
+    <li><strong>Linjataan talvikysymys</strong> — riittääkö rajoitettu talvipääsy vai pitääkö autolla päästä perille? (ks. laatikko ylhäällä)</li>
+    <li><strong>Budjettikatto linjattu: ~350 t€</strong> — nykykohteilla osuus on 48–93 t€/perhe; pyyntihinnaltaan kalliimpikin kohde voi mahtua, jos tarjous menee läpi alle pyynnön</li>
+    <li><strong>Lisäkohteiden haku käynnissä</strong> mantereen rantakohteista (talviasuttava, tieyhteys perille) — uudet kohteet ilmestyvät tälle sivulle</li>
+    <li><strong>Näytöt</strong> — ainakin Lohja kannattaa käydä katsomassa; tunnelmaa ei voi arvioida paperilta</li>
+  </ul>
+</div>
+
+<footer>
+  Sivun kokosi Claude Markon ohjauksessa. Kysymykset ja kommentit → Marko.
+</footer>
+
+</main>
+</body>
+</html>
