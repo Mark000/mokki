@@ -65,6 +65,11 @@
   .kohde .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 8px; }
   .kohde .price { font-weight: 700; color: var(--accent); font-size: 1.15rem; }
   .kohde .perfam { color: var(--muted); font-size: 0.9rem; font-weight: 400; }
+  .majoitus {
+    background: var(--accent-soft); border-radius: 8px; padding: 10px 12px;
+    font-size: 0.92rem; margin: 10px 0;
+  }
+  .majoitus strong { color: var(--accent); }
   .tagrow { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 10px; }
   .tag {
     background: var(--accent-soft); color: var(--accent);
@@ -93,25 +98,25 @@
 
 <header>
   <h1>🏝️ Mökkiprojekti</h1>
-  <p class="updated">Kolmen perheen yhteinen mökkihaku · Päivitetty 29.7.2026 (kierros 2)</p>
+  <p class="updated">Kolmen perheen yhteinen mökkihaku · Päivitetty 30.7.2026 (kierros 3 valmis)</p>
 </header>
 
-<p>Tälle sivulle on koottu perheiden toiveet ja haun tulokset. Ensimmäinen
-hakukierros opetti tärkeän asian: <strong>käytännölliset mutta
-omakotitalomaiset kohteet eivät ole sitä mitä haemme</strong>. Kierros 2 haki
-tunnelmaa ja yksityisyyttä edellä — mukana myös tarkoituksella budjetin
-ylittäviä "kalibrointikohteita", joista näkee mitä unelma maksaa.</p>
+<p>Kolme hakukierrosta tehty, ~35 kohdetta arvioitu. Profiili on tarkentunut:
+haemme <strong>aitoa mökkitunnelmaa</strong> (ei omakotitalomaista, ei
+"hirsilinnaa"), <strong>montaa rakennusta</strong> joihin kolme perhettä
+majoittuu omiin yksiköihinsä, <strong>rantasaunaa vesirajassa</strong>,
+leikkipihaa lapsille ja häiriöttömiä näkymiä. Jokaisesta kärkikohteesta on
+mietitty valmiiksi, kuka nukkuu missä.</p>
 
 <div class="callout">
-  <strong>💡 Mitä markkina kertoo — porukan ydinvalinta</strong>
-  Tunnelma + yksityisyys + budjetti (≤400 t€) tarkoittaa käytännössä
-  veneellä saavutettavaa saarta. Autoyhteydestä meren rannalla tunnelman
-  kanssa maksetaan ~170–240 t€ preemio (vertaa: venekohteet 350–400 t€ vs.
-  tiekohteet 570–590 t€). Kaksi poikkeusta löytyi budjetista: Loviisan
-  Onnenlahti (meri + tie perille, 398 t€) ja Lohjan Mynterlä (järvi + tie
-  perille, 399 t€). Lisäksi opimme: venematkan laatu ratkaisee — 10 min
-  suojaisa matka Vuosaaresta tai 200 m lossilta on eri asia kuin 20 min
-  avomerta. Keskustelkaa: kumpi joustaa, autoyhteys vai budjetti?
+  <strong>💡 Mitä kolme hakukierrosta opetti</strong>
+  Aidon mökkitunnelman + kolmen perheen majoituksen + hyvän saavutettavuuden
+  yhdistelmä on markkinoiden harvinaisin laji. Se löytyy kolmella tavalla:
+  (1) järveltä budjetissa (Härkäsaari 275 t€), (2) mereltä pienellä
+  venytyksellä (Padva 448 t€, Bojnäset 360 t€ perusmukavuuksin), tai
+  (3) premium-hinnalla 700 t€+ (Skataholmarna, Porkkala). Autoyhteyden
+  preemio meren rannalla on ~170–240 t€. Keskustelkaa: meri vai järvi,
+  mukavuustaso, ja missä budjetin oikea raja lopulta on.
 </div>
 
 <h2>Perheiden toiveet</h2>
@@ -119,13 +124,13 @@ ylittäviä "kalibrointikohteita", joista näkee mitä unelma maksaa.</p>
   <div class="card">
     <h3>Marko &amp; Elizabeth</h3>
     <ul>
-      <li><strong>Pitkä tähtäin tärkein:</strong> paikan pitää olla muokattavissa pysyväksi kesäpaikaksi (10+ v) — tontti, rakennusoikeus, sijainti</li>
-      <li><strong>Mahdollisimman muuttovalmis</strong> — ei isoja remppoja heti (tyydyttävä kunto OK, kunhan asuttava eikä hometta; korjaukset ~5 v sisällä käy)</li>
+      <li><strong>Pitkä tähtäin tärkein:</strong> muokattavissa pysyväksi kesäpaikaksi (10+ v) — tontti, rakennusoikeus, sijainti</li>
+      <li><strong>Mahdollisimman muuttovalmis</strong> — ei isoja remppoja heti (terve tyydyttävä kunto OK; korjaukset ~5 v sisällä käy)</li>
       <li><strong>Iso terassi</strong> ja paikkoja nauttia auringosta</li>
       <li><strong>Sauna must</strong>; hiekkaranta/uimapaikka plussaa</li>
-      <li>Hienot näkymät = heti mökkifiilis</li>
+      <li>Hienot näkymät = heti mökkifiilis; <strong>aito mökkimäisyys</strong> (referenssi: Lökholmen)</li>
       <li>Meri tai järvi — kunhan vesi on uimakelpoista</li>
-      <li>Sähkön/veden puute ei este (modernit ratkaisut)</li>
+      <li>Sähkön/veden puute ei este</li>
       <li>Matka: 1 h iso plussa, 2,5 h raja</li>
     </ul>
   </div>
@@ -138,7 +143,7 @@ ylittäviä "kalibrointikohteita", joista näkee mitä unelma maksaa.</p>
       <li>Yksityisyyttä</li>
       <li>Meri mikäli mahdollista, järvi käy myös</li>
       <li><strong>Tilaa kolmen perheen yhtäaikaiseen oleskeluun</strong> — vähintään 3 makuuhuonetta</li>
-      <li>Kokemus omasta saarikohteesta: upea, mutta rakennus- ja kunnostushommat jäävät tekemättä kun kaikki pitää kuljettaa veneellä → autoyhteys iso plussa</li>
+      <li>Kokemus omasta saarikohteesta: upea, mutta projektit jäävät tekemättä kun kaikki kulkee veneellä → autoyhteys iso plussa</li>
     </ul>
   </div>
   <div class="card">
@@ -147,219 +152,220 @@ ylittäviä "kalibrointikohteita", joista näkee mitä unelma maksaa.</p>
       <li>Ajomatka <strong>max 2 h</strong>, mieluiten 1–1,5 h</li>
       <li><strong>Talviasuttava</strong></li>
       <li><strong>Useampi rakennus</strong></li>
-      <li>Meri tai järvi, kunhan vettä; iso järvi käy</li>
-      <li><strong>Mereen menevät kalliot</strong> — tilaa lokoilla ja ottaa aurinkoa; "saaristolaisfiilis"</li>
+      <li>Meri tai järvi; iso järvi käy</li>
+      <li><strong>Mereen menevät kalliot</strong>, saaristolaisfiilis</li>
       <li>Iso sauna lähellä vettä</li>
-      <li>Nukkumapaikkoja ~4/perhe (perhepeti käy) → yhteensä ~12</li>
+      <li>Nukkumapaikkoja ~4/perhe → ~12</li>
       <li>Piha pihapeleille — tai upea rantakallio</li>
-      <li>Naapurit eivät näe terassille = plussaa</li>
-      <li>Tunnelma ratkaisee (arvioidaan näytöillä)</li>
+      <li>Naapurit eivät näe terassille</li>
+      <li>Tunnelma ratkaisee</li>
     </ul>
   </div>
 </div>
 
-<h2>Yhteinen profiili</h2>
-<div class="card">
-  <ul>
-    <li>✨ <strong>Tunnelma ja yksityisyys edellä</strong> — ei omakotitalomaisia kohteita, ei naapureita näköetäisyydellä (linjattu kierros 1:n jälkeen)</li>
-    <li>🌊 Oma rantatontti; pitkä rantaviiva ja iso tontti; meri plussaa, iso/puhdas järvi käy</li>
-    <li>🚗 Ajomatka: sitova raja 2 h, sweet spot 1–1,5 h Helsingistä</li>
-    <li>🛏️ ~12 nukkumapaikkaa — mieluiten useampaan rakennukseen jakautuen</li>
-    <li>🧖 Sauna must — iso, mielellään lähellä vettä; rantakalliot iso plussa</li>
-    <li>❄️ Talviasuttava toiveena (2/3 perheestä) — punnitaan tunnelmaa vasten kohde kerrallaan</li>
-    <li>🔨 Muuttovalmis tai terve tyydyttävä — ei home- eikä purkukohteita</li>
-    <li>💶 Budjettikatto ~350 t€ (≈117 t€/perhe) — kalliimpaan pyyntiin voi tarjota alle; kalibrointikohteet auttavat päättämään, joustaako katto</li>
-  </ul>
-</div>
-
-<h2>Kärkiehdokkaat</h2>
-<p>Nämä viisi osuvat parhaiten tunnelmaprofiiliin budjetin tuntumassa.</p>
+<h2>Kärkiehdokkaat (kierros 3)</h2>
 
 <div class="card kohde">
-  <h3>1. Onnenlahti, Kärpe, Loviisa — tunnelma + meri + tie perille</h3>
-  <p class="price">398 000 € <span class="perfam">· pudotettu 530 t€:sta → tarjous ~360–375 t€ realistinen</span></p>
+  <h3>1. Härkäsaari, Karjalohja — tunnelma + toimivuus budjetissa</h3>
+  <p class="price">275 000 € <span class="perfam">· ~92 000 €/perhe</span></p>
   <div class="tagrow">
-    <span class="tag">Meri</span><span class="tag">TIE PERILLE</span><span class="tag">Ympärivuotinen käyttö</span>
-    <span class="tag">9 400 m²</span><span class="tag">Monta rakennusta</span><span class="tag">1 h 15 min</span>
+    <span class="tag">Lohjanjärvi (kirkasvetisin pää)</span><span class="tag">Saari — hyvin lyhyt suojaisa ylitys</span>
+    <span class="tag">Pihapiiri: 6 rakennusta</span><span class="tag">~10 makuupaikkaa</span><span class="tag">~1 h 10 min</span>
   </div>
-  <p class="meta">Perinteinen mökkipihapiiri etelärinteessä: päärakennus (uusittu 2008, ~95 m², 2 mh + parvi) +
-  vierasmökki + vuoden 1963 käsinveistetty hirsirantasauna takkahuoneineen suoraan vesirajassa +
-  venevaja + autotalli · luonnonhiekkaranta ja kallioita etelään · betonilaituri</p>
+  <p class="meta">Päämökki 2009 (eristetty, ylläpitolämpö talvella) + hirsinen saunamökki 23 m²
+  (saunatupa takalla + makuuparvi) + kesäkeittiö + grillikatos pizzauunilla + kasvihuone ·
+  rakennukset kehystävät suojaisan tasaisen pihan · loivasti syvenevä hiekkaranta "sopii lapsille" ·
+  100 m omaa etelärantaa · oma auto- ja venepaikka Paavolan sillan kupeessa</p>
+  <div class="majoitus"><strong>Majoitus:</strong> Perhe A: mh 1 · Perhe B: mh 2 · Perhe C: saunatuvan
+  takkahuone + parvi (4 paikkaa) omana yksikkönä · yht. ~10 paikkaa</div>
   <div class="pm">
     <div class="plus"><h4>Osuu toiveisiin</h4><ul>
-      <li>Ainoa löytö jossa tunnelma + meri + autoyhteys + hajautettu majoitus samassa</li>
-      <li>Näköalasauna rannassa; hiekkaranta JA kalliot</li>
-      <li>Hintaa pudotettu jo 132 t€ — myyjällä neuvotteluhalua</li>
+      <li>Ainoa budjetissa jossa tunnelma, leikkipiha, lasten ranta ja majoitus yhdistyvät</li>
+      <li>Venematka niin lyhyt ja suojaisa, että Bågast-riski minimissä</li>
     </ul></div>
     <div class="minus"><h4>Kompromissit</h4><ul>
-      <li>Suojaisa lahdenpoukama, ei avomerinäkymää</li>
-      <li>Kaivovesi (kunnallinen liittymä lähellä); rantaviivan pituus varmistettava</li>
+      <li>Järvi, ei meri; ei täysi talvikohde (ylläpitolämpö on)</li>
+      <li>Sauna rannan tuntumassa, ei aivan vesirajassa</li>
+    </ul></div>
+  </div>
+  <p><a href="https://www.etuovi.com/kohde/s93838">Etuovi →</a> · <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/16823888">Oikotie →</a></p>
+</div>
+
+<div class="card kohde">
+  <h3>2. Padvan kalastajatila, Bromarv — kaikki kerralla, jos kuvat vakuuttavat</h3>
+  <p class="price">448 000 € <span class="perfam">· ~149 000 €/perhe</span></p>
+  <div class="tagrow">
+    <span class="tag">Meri (suojaisa lahti)</span><span class="tag">TIE PERILLE</span><span class="tag">Talviasuttava</span>
+    <span class="tag">4 majoitusrakennusta</span><span class="tag">10–12 paikkaa</span><span class="tag">~1 h 50 min</span>
+  </div>
+  <p class="meta">Vanha kalastajatila: päärakennus 125 m² (1928, entisöity henkeä kunnioittaen) +
+  rantasauna/vierasmökki 47 m² aivan rannassa laiturin vieressä + 2 muuta vierasmökkiä + varastot ·
+  9 858 m² · loiva etelärinne · kovapohjainen ranta</p>
+  <div class="majoitus"><strong>Majoitus:</strong> Perhe A: päätalon alakerran master · Perhe B: yläkerran
+  2 mh + alkovit · Perhe C: 47 m² rantamökki omana yksikkönä · varalla 2 vierasmökkiä</div>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Ainoa kohde jossa kapasiteetti + rantasauna vesirajassa + tie + talvi täyttyvät yhtä aikaa</li>
+      <li>Aito, kerrostunut pihapiiri — ei uudistuotantoa</li>
+    </ul></div>
+    <div class="minus"><h4>Kompromissit</h4><ul>
+      <li>125 m² päätalo — liian talomainen? Kuvat/näyttö ratkaisee</li>
+      <li>Venytyshinta; matka 2 h rajalla</li>
+    </ul></div>
+  </div>
+  <p><a href="https://www.etuovi.com/kohde/20777868">Ilmoitus Etuovessa →</a></p>
+</div>
+
+<div class="card kohde">
+  <h3>3. Bojnäset, Tammisaari — oma rakennus per perhe, autolla perille</h3>
+  <p class="price">360 000 € <span class="perfam">· ~120 000 €/perhe</span></p>
+  <div class="tagrow">
+    <span class="tag">Meri (länsiranta)</span><span class="tag">TIE PERILLE</span><span class="tag">Ympärivuotinen</span>
+    <span class="tag">3 majoitusrakennusta</span><span class="tag">~8–10 paikkaa</span><span class="tag">~1 h 30–45 min</span>
+  </div>
+  <p class="meta">Kolmen eri-ikäisen hirsirakennuksen pihapiiri: päämökki 53,5 m² (2019: 3h + parvi) +
+  pyörähirsinen vierasmökki ~30 m² (oma keittiö + sauna) + 14 m² yöpymismökki · 5 500 m² ·
+  100 m lapsiystävällistä rantaviivaa, ilta-aurinko</p>
+  <div class="majoitus"><strong>Majoitus:</strong> Perhe A: päämökki (mh + parvi) · Perhe B: vierasmökki
+  30 m² omalla keittiöllä · Perhe C: yöpymismökki + lapsia päämökin parvelle</div>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Jokaiselle perheelle oma rakennus — heti, ilman rakentamista</li>
+      <li>Aito vaatimaton mökkipiha; tie perille + ympärivuotinen käyttö</li>
+    </ul></div>
+    <div class="minus"><h4>Kompromissit</h4><ul>
+      <li>Perusmukavuudet: ulkokäymälä, ei painevettä, juomavesi tuodaan</li>
+      <li>Sauna vierasmökissä — rantasaunan sijainti varmistettava; vesijättömaininta</li>
+    </ul></div>
+  </div>
+  <p><a href="https://www.etuovi.com/kohde/80513104">Ilmoitus Etuovessa →</a></p>
+</div>
+
+<div class="card kohde">
+  <h3>4. Onnenlahti, Kärpe, Loviisa — meri + tie perille, näyttö ratkaisee</h3>
+  <p class="price">398 000 € <span class="perfam">· pudotettu 530 t€:sta → tarjousvaraa</span></p>
+  <div class="tagrow">
+    <span class="tag">Meri (suojaisa poukama)</span><span class="tag">TIE PERILLE</span><span class="tag">Ympärivuotinen käyttö</span>
+    <span class="tag">Monta rakennusta</span><span class="tag">1 h 15 min</span>
+  </div>
+  <p class="meta">Päärakennus (uusittu 2008, 2 mh + parvi) + vierasmökki + vuoden 1963 käsinveistetty
+  hirsirantasauna takkahuoneineen vesirajassa + venevaja + autotalli · 9 400 m² etelärinne ·
+  luonnonhiekkaranta + kallioita</p>
+  <div class="majoitus"><strong>Majoitus:</strong> Perhe A: mh 1 · Perhe B: mh 2 + lapset parvelle ·
+  Perhe C: vierasmökki · ylivuoto: rantasaunan takkahuone</div>
+  <div class="pm">
+    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
+      <li>Tunnelma-arvioiden täysosuma: pihapiiri + näköalasauna rannassa</li>
+      <li>Meri + autoyhteys budjetin tuntumassa — harvinaisuus</li>
+    </ul></div>
+    <div class="minus"><h4>Näytöllä tarkistettava (Markon lista)</h4><ul>
+      <li>Riittävän suojaisa? Leikkitilaa ulkona? </li>
+      <li>Mökki korkealla, ranta alhaalla — kulku ja saunan todellinen sijainti</li>
     </ul></div>
   </div>
   <p><a href="https://www.etuovi.com/kohde/80486713">Ilmoitus Etuovessa →</a></p>
 </div>
 
 <div class="card kohde">
-  <h3>2. Mölandet, Sipoo — tunnelma/hinta-suhteen kärki</h3>
-  <p class="price">350 000 € <span class="perfam">· täsmälleen budjettikatossa</span></p>
+  <h3>5. Vuolenkoski, Iitti — aittapihapiiri, rakenteen täsmäosuma</h3>
+  <p class="price">350 000 € <span class="perfam">· ~117 000 €/perhe</span></p>
   <div class="tagrow">
-    <span class="tag">Meri</span><span class="tag">Saari (vene 10 min)</span><span class="tag">1,87 ha</span>
-    <span class="tag">Vuoden 1911 huvila</span><span class="tag">3 rakennusta</span><span class="tag">35–40 min ovelta rantaan!</span>
+    <span class="tag">Kymijoki (kirkas vesi)</span><span class="tag">TIE PERILLE</span><span class="tag">Talviasuttava</span>
+    <span class="tag">3 majoitusrakennusta</span><span class="tag">Rak.oikeutta jäljellä</span><span class="tag">1 h 40 min</span>
   </div>
-  <p class="meta">Kulttuurihistoriallinen kesähuvila (~110 m², 2 mh + tupa) + vierasmökki (2003) +
-  saunarakennus oleskelutilalla · kallioista rantaa, eristäytynyt oma rauha · vene Vuosaaresta,
-  vuokravenepaikkoja saatavilla</p>
+  <p class="meta">Salvos-hirsikokonaisuus 2020: päämökki (tupa + alkovi) + rantasauna + aittarakennus
+  kahdella eristetyllä makuuaitalla + grillikota · kovapohjainen hiekkaranta · tasainen piha
+  "lasten peleihin" · Vuolenkosken kylä palveluineen &lt;2 km</p>
+  <div class="majoitus"><strong>Majoitus:</strong> Perhe A: päämökki · Perhe B: makuuaitta 1 · Perhe C:
+  makuuaitta 2 · 8 paikkaa nyt — rakennusoikeudella lisäaitta → 12</div>
   <div class="pm">
     <div class="plus"><h4>Osuu toiveisiin</h4><ul>
-      <li>Aito vanha huvila — tunnelman ääripää budjetissa</li>
-      <li>Nopein kokonaismatka koko haussa (lyö autokohteetkin)</li>
-      <li>Kolme majoitusrakennusta → perheille omaa rauhaa</li>
+      <li>Rakenne täsmälleen toiveiden mukainen: oma rakennus per perhe + rantasauna + leikkipiha</li>
+      <li>Tie perille, talviasuttava, kylä lähellä</li>
     </ul></div>
     <div class="minus"><h4>Kompromissit</h4><ul>
-      <li>Vene ainoa yhteys ympäri vuoden (tosin lyhyt ja suojaisa matka)</li>
-      <li>Kunto "tyydyttävä" → kuntokatselmus ehtona</li>
+      <li>Joki (padotusselkä), ei järvi eikä meri</li>
+      <li>Uutta — perinnehuvilan patina puuttuu; määräalakauppa</li>
     </ul></div>
   </div>
-  <p><a href="https://www.etuovi.com/kohde/20312564">Ilmoitus Etuovessa →</a></p>
+  <p><a href="https://www.etuovi.com/kohde/21137518">Ilmoitus Etuovessa →</a></p>
 </div>
 
 <div class="card kohde">
-  <h3>3. Stora Björnholm, Bromarv, Raasepori — oma saaristotila</h3>
-  <p class="price">239 000 € <span class="perfam">· jättää ~110 t€ varaa veneeseen, kunnostukseen ja varusteluun</span></p>
+  <h3>6. Svartö, Barösund, Inkoo — Lökholmen-henkinen pihapiiri hiekkapoukamassa</h3>
+  <p class="price">390 000 € <span class="perfam">· ~130 000 €/perhe</span></p>
   <div class="tagrow">
-    <span class="tag">Meri 4 suuntaan</span><span class="tag">Saari (vene 15–20 min)</span>
-    <span class="tag">1,69 ha · 250 m rantaa</span><span class="tag">3 mh hajautettuna</span><span class="tag">~2 h yht.</span>
+    <span class="tag">Meri (etelähiekkapoukama)</span><span class="tag">Saari — vene 10–15 min</span>
+    <span class="tag">4 rakennusta</span><span class="tag">2 ha</span><span class="tag">~1 h + vene</span>
   </div>
-  <p class="meta">Päämökki isolla terassilla + rantasauna merinäkymällä + saunakabinetti + vierasmökki +
-  3 varastoa · 11,8 m laituri + aallonmurtaja · kalliota ja loivaa rantaa · "lähes täydellinen rauha"</p>
+  <p class="meta">Päätalo 90 m² (4h+k) + erillinen mökki (2018) + saunarakennus + vierasmökki ·
+  kallio-, kanervikko- ja mustikkamaastoa · Storsandviken "erittäin rauhallinen" ·
+  kauppa/ravintola 2 mpk</p>
+  <div class="majoitus"><strong>Majoitus:</strong> Perhe A: päätalo · Perhe B: 2018-mökki · Perhe C:
+  vierasmökki · huonejako varmistettava välittäjältä</div>
   <div class="pm">
     <div class="plus"><h4>Osuu toiveisiin</h4><ul>
-      <li>Alkuperäisten kohteiden tunnelma isompana — juuri tilauksen mukaan</li>
-      <li>250 m omaa rantaa, ei naapureita — halvimmalla koko listalla</li>
+      <li>Aito saaristopihapiiri, suojaisa etelähiekkaranta</li>
+      <li>Neljä rakennusta — perheiden oma rauha</li>
     </ul></div>
     <div class="minus"><h4>Kompromissit</h4><ul>
-      <li>15–20 min avovesimatka = todellinen veneriippuvuus (Bågast-oppi)</li>
-      <li>Kokonaismatka ~2 h rajalla; ei talvikäyttöä; rakennusvuosi selvitettävä</li>
+      <li>Päätalon kunto tyydyttävä, katto 1989 → remonttivara hintaan</li>
+      <li>Veneyhteys (lyhyt ja suojaisa tosin)</li>
     </ul></div>
   </div>
-  <p><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/raasepori/23514666">Ilmoitus Oikotiellä →</a></p>
+  <p><a href="https://www.etuovi.com/kohde/80503267">Ilmoitus Etuovessa →</a></p>
 </div>
 
-<div class="card kohde">
-  <h3>4. Varjansaari (kelohuvila), Asikkala — kolmen rakennuksen saaripihapiiri</h3>
-  <p class="price">395 000 € <span class="perfam">· samassa saaressa myynnissä myös toinen kohde (420 t€) — katso molemmat samalla reissulla</span></p>
-  <div class="tagrow">
-    <span class="tag">Vesijärvi + Päijänne-yhteys</span><span class="tag">Saari (vene 2 km Vääksystä)</span>
-    <span class="tag">6 350 m²</span><span class="tag">3 rakennusta</span><span class="tag">1 h 25 min + vene</span>
-  </div>
-  <p class="meta">Kelohonka-päärakennus 1997 (tupa + 1 mh) + vierasmökki 28 m² + saunamökki parvella ·
-  grillikatos · ILP, sähkö · iso ja hyvälaatuinen järvi, kanavayhteys Päijänteelle</p>
-  <div class="pm">
-    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
-      <li>Kelohirsipihapiiri = tunnelma; 3 rakennusta = perheiden oma rauha</li>
-      <li>Vääksyn palvelut venematkan lähtöpisteessä — helppo logistiikka</li>
-    </ul></div>
-    <div class="minus"><h4>Kompromissit</h4><ul>
-      <li>Vain veneellä; talvi jään ehdoilla</li>
-      <li>Vain 1 varsinainen mh päärakennuksessa</li>
-    </ul></div>
-  </div>
-  <p><a href="https://www.etuovi.com/kohde/617243">Ilmoitus Etuovessa →</a></p>
+<div class="callout">
+  <strong>🧪 Makutesti: Iso-Suonia, Karjalohja — 268 000 €</strong>
+  Puhtain "aito mökkifiilis" -löytö koko haussa: 1700-luvun hirsipihapiiri,
+  3 aittaa + luhtiaitta, riihi savusaunalla, rantasauna niemenkärjessä,
+  tuulimylly, 2 ha, tie perille. Mutta mukavuudet ovat aidosti alkeelliset
+  (ei suihkua, ei sisä-wc:tä) ja järvi pieni. <strong>Katsokaa kuvat porukalla:</strong>
+  jos tämä kiehtoo, tunnelma todella ratkaisee kaiken — jos ei, mukavuusraja
+  on korkeammalla kuin on puhuttu. Vastaus ohjaa loppuhakua.
+  <a href="https://www.etuovi.com/kohde/21408771">Ilmoitus →</a>
 </div>
 
-<div class="card kohde">
-  <h3>5. Mynterlä, Lohja — hirsihuvilapiha 50 minuutin päässä</h3>
-  <p class="price">399 000 € <span class="perfam">· pudotettu 499 t€:sta → lisää neuvotteluvaraa todennäköisesti</span></p>
-  <div class="tagrow">
-    <span class="tag">Hiidenvesi</span><span class="tag">TIE PERILLE</span><span class="tag">Talvikäyttö OK</span>
-    <span class="tag">3 mh</span><span class="tag">5 820 m²</span><span class="tag">~50 min</span>
-  </div>
-  <p class="meta">Honka-hirsihuvila 1974 (90 m², 3 mh, yksi omalla sisäänkäynnillä) + iso saunarakennus 2010
-  (35 m², kesäkeittiö puuhellalla, lasitettu lämmitetty terassi) · oma hiekkaranta + laituri · rinnetontti järvelle</p>
-  <div class="pm">
-    <div class="plus"><h4>Osuu toiveisiin</h4><ul>
-      <li>Tunnelma + 3 mh + autoyhteys + 50 min — käytännöllisin kärkikohteista</li>
-      <li>Kahden rakennuksen huvilapiha, ei omakotitalomainen</li>
-    </ul></div>
-    <div class="minus"><h4>Kompromissit</h4><ul>
-      <li>Hiidenvesi on savisamea — Markon uimavesikriteeri varmistettava</li>
-      <li>Naapurien näkyvyys varmistettava näytöllä; kuivakäymälä</li>
-    </ul></div>
-  </div>
-  <p><a href="https://www.etuovi.com/kohde/80503436">Ilmoitus Etuovessa →</a></p>
-</div>
-
-<p><strong>Villikortit:</strong> <a href="https://www.etuovi.com/kohde/x37274">Sipoo Kråkön 495 t€</a>
-(240 m rantaa saaren molemmin puolin — auringonnousu idästä, lasku länsikallioilta — 45–50 min
-Helsingistä; vain 2 mh) ja <a href="https://www.etuovi.com/kohde/20043628">Raasepori Lökholmen 380 t€</a>
-(dramaattiset kalliot + hiekkarannat + talviyhteys taksiveneellä; 2 mh).</p>
-
-<h2>Kaikki kierros 2:n kohteet</h2>
-
-<h3>Ostettavissa (pyynti ≤400 t€)</h3>
-<div class="tablewrap">
-<table>
-  <thead><tr><th>Kohde</th><th>Hinta</th><th>Tontti/ranta</th><th>Majoitus</th><th>Yhteys</th><th>Matka</th></tr></thead>
-  <tbody>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/raasepori/23514666">Raasepori, Stora Björnholm</a></td><td>239 t€</td><td>1,69 ha / 250 m</td><td>3 mh hajautettuna</td><td>vene 15–20 min</td><td>~2 h</td></tr>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/16799994">Porvoo, Rävholmen</a></td><td>257 t€</td><td>2 ha / >100 m</td><td>2 mh + saunatupa; +40 m² rak.oik.</td><td>vene 15–20 min</td><td>~1 h 20</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/20312564">Sipoo, Mölandet</a></td><td>350 t€</td><td>1,87 ha</td><td>2 mh + vierasmökki + saunatupa</td><td>vene 10 min</td><td>35–40 min</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80512123">Kemiönsaari, Ekholmen</a></td><td>365 t€</td><td>1,23 ha / 135 m</td><td>2 mh + alkovi + vierasmökki</td><td>vene 10 min</td><td>yli 2 h ⚠️</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/20043628">Raasepori, Lökholmen</a></td><td>380 t€</td><td>1,56 ha</td><td>2 mh + kabinetti</td><td>vene 20 min; talvi taksivene</td><td>~1 h 35</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/617243">Asikkala, Varjansaari kelo</a></td><td>395 t€</td><td>6 350 m²</td><td>1 mh + vierasmökki + saunaparvi</td><td>vene 2 km</td><td>~1 h 25</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80486713">Loviisa, Onnenlahti</a></td><td>398 t€ ↓</td><td>9 400 m²</td><td>2 mh + parvi + vierasmökki</td><td><strong>tie perille</strong></td><td>~1 h 15</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80503436">Lohja, Mynterlä</a></td><td>399 t€ ↓</td><td>5 820 m²</td><td>3 mh + saunarakennus</td><td><strong>tie perille</strong></td><td>~50 min</td></tr>
-  </tbody>
-</table>
-</div>
-
-<h3>Kalibrointikori (400–650 t€) — mitä unelma maksaa</h3>
-<p>Nämä ylittävät budjetin tarkoituksella: niistä näkee, mitä mikäkin ominaisuus
-maksaa — ja auttavat päättämään, kannattaako kattoa venyttää vai kompromissista tinkiä.</p>
+<h2>Premium-taso (jos budjetti joustaa isosti)</h2>
 <div class="tablewrap">
 <table>
   <thead><tr><th>Kohde</th><th>Hinta</th><th>Ydinviesti</th><th>Matka</th></tr></thead>
   <tbody>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/asikkala/24321610">Asikkala, Varjansaari 2012</a></td><td>420 t€</td><td>3 mh + 100 m omaa hiekkarantaa saaressa</td><td>1 h 25 + vene</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/21808823">Padasjoki, Nyystölä</a></td><td>425 t€</td><td>Täysremontti 2024 + savusauna + oma pikkusaari; tie perille (Päijänne)</td><td>1 h 45</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/58403551">Heinola, Rihu</a></td><td>445 t€</td><td>20 ha ja 2 km omaa rantaviivaa — yksityisyyden ääripää; tie perille</td><td>1 h 50</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/fv4943">Padasjoki, Virmaila</a></td><td>495 t€</td><td>Uusi 2025 hirsihuvila, 3 mh, 150 m rantaa, saari + silta (Päijänne)</td><td>~2 h</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/x37274">Sipoo, Kråkön</a></td><td>495 t€</td><td>240 m rantaa itään JA länteen; talviasuttava</td><td>45–50 min</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80428396">Porvoo, Möholmintie</a></td><td>570 t€</td><td>Tie perille + meri + 1,3 ha mökkipiha</td><td>1 h 15</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80390769">Sipoo, Krokholmen</a></td><td>575 t€ ↓?</td><td><strong>Oma rakennus per perhe</strong> — saneerattu 1930 huvilapihapiiri</td><td>~50 min</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80510936">Raasepori, Skåldöntie 310</a></td><td>590 t€</td><td>Suojeltu 1730-l. talo; tie + lossi, täysi talvikäyttö</td><td>1 h 30</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/20155074">Raasepori, Järnö "Kesähelmi"</a></td><td>625 t€</td><td>132 m² hirsihuvila kallioilla, 14 makuupaikkaa, tenniskenttä</td><td>1 h 25 + vene</td></tr>
-    <tr><td><a href="https://www.etuovi.com/kohde/80520865">Raasepori, Skallholmen</a></td><td>650 t€</td><td>9,4 ha oma saaristotila; vain 200 m ylitys lossilta</td><td>1 h 45</td></tr>
+    <tr><td><a href="https://www.etuovi.com/kohde/80515961">Skataholmarna, Snappertuna</a></td><td>958 t€</td><td>⭐ Tunnelmavoittaja: 2 omaa saarta kävelysillalla + laguuni + avokalliot + 42 ha vesialue; 3. perheyksikkö rakennettava (kaivo + sähkö valmiina)</td><td>1 h 20 + 10 min vene</td></tr>
+    <tr><td><a href="https://www.etuovi.com/kohde/21289776">Porkkala, Kirkkonummi</a></td><td>700 t€</td><td>45–50 min Helsingistä! 150 m rantaa (hiekka+kalliot), sivuasunto 3. perheelle; marina naapurina — häiriö tarkistettava</td><td>45–50 min</td></tr>
+    <tr><td><a href="https://www.etuovi.com/kohde/20235168">Barösundin oma niemi, Inkoo</a></td><td>980 t€</td><td>Ainoa jossa kaikki mahtuvat väljästi heti (4 mh + 60 m² vierasmökki) + 320 k-m² rak.oik.; tyyli talomainen, ei rantasaunaa</td><td>1 h 10 + lossi</td></tr>
+    <tr><td><a href="https://www.etuovi.com/kohde/20243212">Salonsaari, Asikkala</a></td><td>760 t€</td><td>Lapsiystävällisin: tasainen niemitontti Päijänteellä, rantasauna + palju; rak.oikeus käytetty</td><td>1 h 35</td></tr>
+    <tr><td><a href="https://www.etuovi.com/kohde/20155074">Järnö "Kesähelmi", Raasepori</a></td><td>625 t€</td><td>132 m² hirsihuvila kallioilla, 14 makuupaikkaa saman katon alla, tenniskenttä</td><td>1 h 25 + vene</td></tr>
+    <tr><td><a href="https://www.etuovi.com/kohde/80520865">Skallholmen, Skåldö</a></td><td>650 t€</td><td>9,4 ha oma saaristotila; vain 200 m ylitys lossilta</td><td>1 h 45</td></tr>
   </tbody>
 </table>
 </div>
 
-<h3>Alkuperäiset neljä (tunnelmareferenssi)</h3>
-<p class="archive">Nämä käynnistivät haun ja määrittivät oikean tunnelman. Kaikki veneellä
-saavutettavia saaria.</p>
+<h2>Hylätyt ja miksi</h2>
+<p class="archive">Kalibrointihistoria — näistä opittiin mitä EI haeta.</p>
 <div class="tablewrap">
 <table>
-  <thead><tr><th>Kohde</th><th>Hinta</th><th>Huomiot</th></tr></thead>
+  <thead><tr><th>Kohde</th><th>Hinta</th><th>Hylkäyssyy</th></tr></thead>
   <tbody>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24514493">Loviisa, Myssholmen</a></td><td>145 t€</td><td>Halvin koko haussa; 127 m² käyttämätöntä rakennusoikeutta; kunto tyydyttävä; 2h+k</td></tr>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/inkoo/24572182">Inkoo, Alkobben</a></td><td>258 t€</td><td>3 erillistä mökkiä, 160 m rantaa; kunto välttävä = iso projekti</td></tr>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/16823888">Lohja, Härkäsaari</a></td><td>275 t€</td><td>~10 makuupaikkaa, hyvä kunto 2009; järvi</td></tr>
-    <tr><td><a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/24432469">Porvoo, Kalvön</a></td><td>279 t€</td><td>2012 hirsi, kalustettu, poreamme; meri</td></tr>
+    <tr><td>Mölandet, Sipoo</td><td>350 t€</td><td>Päämökki omakotitalomainen; telakka näkyy näkymissä</td></tr>
+    <tr><td>Mynterlä, Lohja</td><td>399 t€</td><td>Liian hirsihuvilamainen; ei rantasaunaa ja fiilistä</td></tr>
+    <tr><td>Krokholmen, Sipoo</td><td>575 t€</td><td>"Aika omakotimainen" — rakenne (oma rakennus/perhe) oli oikea, tunnelma väärä</td></tr>
+    <tr><td>Stora Björnholm, Bromarv</td><td>239 t€</td><td>Konsepti oikea (monirakennuksinen saaristotila), väärä saari ja liian pieni</td></tr>
+    <tr><td>Varjansaari kelo, Asikkala</td><td>395 t€</td><td>Hinnalla odottaisi valmiimman paketin</td></tr>
+    <tr><td>Kierros 1: mantere (12 kohdetta)</td><td>192–380 t€</td><td>Liian omakotitalomaisia, naapurit liian lähellä</td></tr>
+    <tr><td>Kemiönsaaren kohteet</td><td>—</td><td>Ajomatka yli 2 h rajan</td></tr>
   </tbody>
 </table>
 </div>
-
-<p class="archive"><em>Arkisto:</em> Kierros 1:n mantereen kohteet (12 kpl: Pyhtää, Loviisan manner,
-Vihti, Padasjoki, Heinola, Asikkala, Raasepori, Hanko, Kemiönsaari) todettiin porukan arviossa
-liian omakotitalomaisiksi — tiedot tallessa, palataan jos profiili muuttuu.</p>
 
 <h2>Seuraavat askeleet</h2>
 <div class="card">
   <ul>
-    <li><strong>Keskustelkaa ydinvalinta:</strong> autoyhteys vai budjetti — kalibrointidata yllä auttaa (autoyhteyden preemio merellä ~170–240 t€)</li>
-    <li><strong>Jokainen perhe: top 3</strong> kärkiehdokkaista + villikorteista → sovitaan näytöt</li>
-    <li><strong>Tehokkaat näyttöreissut:</strong> Sipoon kohteet (Mölandet + Kråkön + Krokholmen) yhdellä reissulla; Varjansaaren kaksi kohdetta samalla venematkalla; Raaseporin saaret (Lökholmen + kalibrointikohteet) omanaan</li>
-    <li><strong>Onnenlahti ja Mynterlä liikkuvat todennäköisesti nopeasti</strong> — molempien hintaa on juuri pudotettu rajusti, eli myyjät haluavat kaupan syksyyn mennessä</li>
+    <li><strong>Iso-Suonia-makutesti:</strong> katsokaa kuvat yhdessä — vastaus kertoo missä tunnelma/mukavuus-raja oikeasti kulkee</li>
+    <li><strong>Meri vai järvi -linjaus:</strong> Härkäsaari (275 t€) on järvivaihtoehtona omassa luokassaan; meri maksaa saman paketin osalta 360–450 t€</li>
+    <li><strong>Jokainen perhe: top 3 kärkiehdokkaista</strong> → sovitaan näytöt. Tehokas reitti: Raaseporin kolmikko (Padva + Bojnäset + Svartö) yhtenä päivänä; Härkäsaari + Iso-Suonia (molemmat Karjalohjalla!) toisena</li>
+    <li><strong>Onnenlahden näyttö</strong> Markon tarkistuslistalla (suojaisuus, leikkitila, rinne, saunan sijainti) — hintaa pudotettu 132 t€, liikkunee nopeasti</li>
   </ul>
 </div>
 
