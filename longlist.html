@@ -23,196 +23,241 @@
     padding:8px 10px; margin:6px 0; }
   li.star { border-left:4px solid var(--accent); }
   li.maybe { border-left:4px solid var(--mid); opacity:.92; }
-  li.no { border-left:4px solid var(--bad); opacity:.75; font-size:.9rem; }
-  a { color:var(--accent); white-space:nowrap; }
+  li.gone { border-left:4px solid var(--muted); opacity:.7; }
+  li.plain { font-size:.92rem; }
+  a { color:var(--accent); }
   p { margin:0 0 10px; }
   hr { border:none; border-top:1px solid var(--line); margin:28px 0; }
   .back { font-size:.9rem; }
+  .num { display:inline-block; min-width:2.4em; font-weight:700; }
 </style>
 </head>
 <body>
 <main>
-<p class="back"><a href="index.html">← Takaisin pääsivulle</a></p>
-<h1>LONGLIST — kattava markkinakartoitus 31.7.2026</h1>
+<p class="back"><a href="index.html">&larr; Takaisin p&auml;&auml;sivulle</a></p>
 
-<p>Suodatin: loma-asunto myynnissä, 150–700 k€, <strong>oma ranta</strong>, max ~2 h Helsingistä. Käyty läpi: <strong>~790 ilmoitusta</strong> (Etuovi kaikki kuntasivut sivutuksineen + Oikotie hakurajapinnan/hakukoneiden kautta). Jo arvioidut ~35 kohdetta rajattu pois. Tuomiot ostajaprofiililla: aito mökkifiilis, monta rakennusta / ≥3 mh, rantasauna, yksityisyys.</p>
-
+<h1>LONGLIST v2 — koko markkina, numeroitu palautteelle (31.7.2026)</h1>
+<p>Suodatin: loma-asunto myynnissä, 150–700 k€, <strong>oma ranta</strong>, max ~2 h Helsingistä. Kattavuus: Etuovi täysi läpikäynti (~790 ilmoitusta) + <strong>Oikotie täysi API-inventaario kaikista alueen kunnista</strong> + huutokaupat.com + tori.fi + yksityismyyntikanavat tarkistettu. Jo arvioidut ~35 kohdetta (kierrokset 1–3) eivät ole tällä listalla. Tuomiot ostajaprofiililla: aito mökkifiilis, monta rakennusta / ≥3 mh, rantasauna, yksityisyys.</p>
+<p><strong>Numerot ovat pysyviä kohde-ID:itä</strong> — palaute muodossa "12 ei, 43 kyllä, 71 näytölle". Numero ei muutu vaikka kohde siirtyisi tasolta toiselle.</p>
 <ul>
-<li class="star">⭐ = potentiaalinen — katso nämä</li>
-<li class="maybe">~ = rajatapaus (syy suluissa/lopussa)</li>
-<li class="no">✗ = täytti suodattimen mutta ei profiilia (syy)</li>
+<li class="star">⭐ = potentiaalinen — katso nämä (71 kpl)</li>
+<li class="maybe">~ = rajatapaus, hylkäyssyy sulkeissa (66 kpl) — nopea veto/nosto riittää</li>
+<li class="plain">🆕 = löytynyt 31.7. illan aukonpaikkauksessa (Oikotie-API + langat)</li>
 </ul>
-
-<p><strong>Duplikaattihuomiot:</strong> Etuovi 80499107 = jo arvioitu Porvoo Kalvön; Etuovi 80494525 (Mynterlä 229 k€) = jo arvioitu Lohja Väänteenjoki; Etuovi 21289776 (Porkkala 700 k€) = jo arvioitu premium-kierroksella; Oikotie 24321610 = Etuovi 80479429 (Varjansaari). Nämä eivät ole alla uudestaan.</p>
-
+<p><strong>Duplikaattihuomiot:</strong> Etuovi 80499107 = jo arvioitu Porvoo Kalvön; Etuovi 80494525 (Mynterlä 229 k€) = jo arvioitu Lohja Väänteenjoki; Etuovi 21289776 (Porkkala 700 k€) = jo arvioitu premium-kierroksella; Oikotie 24321610 = Etuovi 80479429 (Varjansaari); Oikotie 24534893 (Poutunkankaantie 459 k€) = jo arvioitu Hauho Poutunjärvi; Oikotie 24608850 = kohde 31 (Iso-Kisko); Oikotie 24582421 = kohde 38 (Tarkeelanjärvi).</p>
 <hr>
-
-<h2>⭐ POTENTIAALISET (66 kpl)</h2>
-
-<h3>Meri — itä (Sipoo, Porvoo, Loviisa, Pyhtää)</h3>
-
+<h2>⭐ POTENTIAALISET (71 kpl)</h2>
+<h3>Meri — itä (Sipoo, Porvoo, Loviisa)</h3>
 <ul>
-<li class="star">⭐ Sipoo, Storkobben | 565 k€ | KOKONAINEN OMA SAARI, 300 m kalliorantaa; 3 mh + rantasauna silokallioilla + 2h vierasmökki | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/sipoo/16929752">linkki</a></li>
-<li class="star">⭐ Sipoo, Störjeviken | 395 k€ | 145 m² päätalo 10–16 hengelle + vierasmaja + rantasauna, purjevenelaituri | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/sipoo/15856669">linkki</a></li>
-<li class="star">⭐ Sipoo, Villa Majholmen (Box) | 460 k€ | v. 1900 hirsirunkoinen uusrenessanssihuvila 120 m² (6h, kaakeliuunit) + rantasauna + vierasmökki, kalustettuna | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/sipoo/22114979">linkki</a></li>
-<li class="star">⭐ Sipoo, Opanholmen | 299 k€ | 66 m² hirsimökki 1984 + rantasauna 18 m² + aitta 30 m², 155 m omaa merirantaa, ilta-aurinko | <a href="https://www.etuovi.com/kohde/80498863">linkki</a></li>
-<li class="star">⭐ Porvoo, Vessö — Möholmintie 76 | 620 k€ | 93 m² (perusk. 2009/13) + venevaja + 4 talousrakennusta, 70 m hiekkarantaa, avomerinäkymä, tie perille (vain 2 mh) | <a href="https://www.etuovi.com/kohde/80498864">linkki</a></li>
-<li class="star">⭐ Loviisa, Björnvik — Saukontie 84 | 395 k€ | 120 m² + rantasauna/saunatupa 47 m² + vierastupa + rantamökki + kesäkeittiö, tie perille | <a href="https://www.etuovi.com/kohde/80521033">linkki</a></li>
-<li class="star">⭐ Loviisa, Tallbacka — &quot;Myssholmen&quot; (eri kuin arvioitu!) | 249 k€ | 80/140 m² päämökki 2009, 4 mh + rantasauna + vanha hirsimökki, kallio+hiekkaranta (saari, kantovesi) | <a href="https://www.etuovi.com/kohde/20735159">linkki</a></li>
-<li class="star">⭐ Loviisa, Kabböle — Lökuddintie 52 | 395 k€ | 155 m² päätalo + hirsimökki 1995 + autotalli, 3 ha, 135 m länsirantaa (⚠️ päätalo vaatii kattavan remontin) | <a href="https://www.etuovi.com/kohde/21709602">linkki</a></li>
-<li class="star">⭐ Loviisa, Våtskär — Hästön 285 | 158 k€ | 74 m², 3 mh + vierasmökki + rantasauna + huvimaja (vene; yhteiskaivo) | <a href="https://www.etuovi.com/kohde/80510487">linkki</a></li>
-<li class="star">⭐ Loviisa, Vahterpää — Ålholmen | 179 k€ | KAKSI mökkiä + savusauna, 240 m rantaa, vene+autopaikka kaupassa (lyhyt venematka) | <a href="https://www.etuovi.com/kohde/20998202">linkki</a></li>
-<li class="star">⭐ Loviisa, Mästlax — Käldö 534 | 298 k€ | 76 m² Kontio 4h+k+s ympärivuotinen, 9 400 m², suojaisa 500 m venematka | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/17533141">linkki</a></li>
-<li class="star">⭐ Loviisa, Kulla — Grönauddenintie 76 | 490 k€ | 140 m² mansardihuvila 1928 (5h), 9 500 m² (rantatiedot varmistettava) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/23641966">linkki</a></li>
+<li class="star"><span class="num">1.</span> ⭐ Sipoo, Villa Majholmen (Box) | 398 k€ ↓460 (uusi ilmoitus 31.7.!) | v. 1900 hirsirunkoinen uusrenessanssihuvila 120/150 m² (6h, kaakeliuunit) + rantasauna + vierasmökki, kalustettuna (pihapiirin rakennukset kaipaavat kunnostusta) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/sipoo/24426355">linkki</a></li>
+<li class="star"><span class="num">2.</span> ⭐ Sipoo, Opanholmen | 299 k€ | 66 m² hirsimökki 1984 + rantasauna 18 m² + aitta 30 m², 155 m omaa merirantaa, ilta-aurinko | <a href="https://www.etuovi.com/kohde/80498863">linkki</a></li>
+<li class="star"><span class="num">3.</span> ⭐ Porvoo, Vessö — Möholmintie 76 | 620 k€ | 93 m² (perusk. 2009/13) + venevaja + 4 talousrakennusta, 70 m hiekkarantaa, avomerinäkymä, tie perille (vain 2 mh) | <a href="https://www.etuovi.com/kohde/80498864">linkki</a></li>
+<li class="star"><span class="num">4.</span> 🆕⭐ Porvoo, Vessö — Kroksnäsintie 659 | 385 k€ | 1800/1900-l. päärakennus, 3 mh + takkahuone + sivurakennus 1947 (tupakeittiö + iso mh) + aitta + 41 m² rantasauna, 6 000 m², suojaisa meriranta, ~1 h (rakennukset kaipaavat kunnostusta) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/24410600">linkki</a></li>
+<li class="star"><span class="num">5.</span> ⭐ Loviisa, Björnvik — Saukontie 84 | 395 k€ | 120 m² + rantasauna/saunatupa 47 m² + vierastupa + rantamökki + kesäkeittiö, tie perille | <a href="https://www.etuovi.com/kohde/80521033">linkki</a></li>
+<li class="star"><span class="num">6.</span> ⭐ Loviisa, Tallbacka — "Myssholmen" (eri kuin arvioitu!) | 249 k€ | 80/140 m² päämökki 2009, 4 mh + rantasauna + vanha hirsimökki, kallio+hiekkaranta (saari, kantovesi) | <a href="https://www.etuovi.com/kohde/20735159">linkki</a></li>
+<li class="star"><span class="num">7.</span> ⭐ Loviisa, Kabböle — Lökuddintie 52 | 395 k€ | 155 m² päätalo + hirsimökki 1995 + autotalli, 3 ha, 135 m länsirantaa (⚠️ päätalo vaatii kattavan remontin) | <a href="https://www.etuovi.com/kohde/21709602">linkki</a></li>
+<li class="star"><span class="num">8.</span> ⭐ Loviisa, Våtskär — Hästön 285 | 158 k€ | 74 m², 3 mh + vierasmökki + rantasauna + huvimaja (vene; yhteiskaivo) | <a href="https://www.etuovi.com/kohde/80510487">linkki</a></li>
+<li class="star"><span class="num">9.</span> ⭐ Loviisa, Vahterpää — Ålholmen | 179 k€ | KAKSI mökkiä + savusauna, 240 m rantaa, vene+autopaikka kaupassa (lyhyt venematka) | <a href="https://www.etuovi.com/kohde/20998202">linkki</a></li>
 </ul>
-
-<h3>Meri — länsi (Kirkkonummi, Siuntio, Inkoo, Raasepori, Hanko)</h3>
-
+<h3>Meri — länsi (Kirkkonummi, Siuntio, Inkoo, Raasepori)</h3>
 <ul>
-<li class="star">⭐ Kirkkonummi, Jorvas — saarikiinteistö | 650 k€ | 114 m² (3 mh) + vierasmökki 50 m² + rantasauna 40 m² + harrastetalo + aitta 1835; 200–400 m venematka | <a href="https://www.etuovi.com/kohde/w46442">linkki</a></li>
-<li class="star">⭐ Siuntio, Pickala — Kalvön saari | 460 k€ | 93 m² (2 mh) + sauna v. 1910 + 2 sähkölämmitteistä makuuaittaa, 2 ha, 110 m rantaa | <a href="https://www.etuovi.com/kohde/1395864">linkki</a></li>
-<li class="star">⭐ Inkoo, Ändholmsklobben | 490 k€ | KOKONAINEN OMA SAARI: tupa 48 m² + saunarakennus, ranta joka suuntaan | <a href="https://www.etuovi.com/kohde/20835637">linkki</a></li>
-<li class="star">⭐ Inkoo, Grundsö | 680 k€ | mökki 40 + vierasmökki 20 + rantasauna 30 m², 4,5 ha, syvä suojaisa lahti | <a href="https://www.etuovi.com/kohde/80506362">linkki</a></li>
-<li class="star">⭐ Inkoo, Storramsjö — Jakobramsjö Fisketorp | 295 k€ | 97/115 m² (2012), 2 mh + vierastupa + venevaja 53 m², kiviranta + laituri | <a href="https://www.etuovi.com/kohde/21389947">linkki</a></li>
-<li class="star">⭐ Inkoo, Barösund — Åkerholmen | 235 k€ | 52 m² tupa+parvi + saunamökki 30 m², 150 m rantaa, lyhyt venematka | <a href="https://www.etuovi.com/kohde/31412794">linkki</a></li>
-<li class="star">⭐ Inkoo, Ålö 450 | 260 k€ | 58 m² 3h + saunarak. + iso talousrak. 96 m² (kunto välttävä = työtä) | <a href="https://www.etuovi.com/kohde/20342490">linkki</a></li>
-<li class="star">⭐ Inkoo, Fagervik — Donnelsbackantie 76–78 | 398 k€ | 69/93 m² 4h + rantasauna jossa majoitustilaa, MANNER + tie perille | <a href="https://www.etuovi.com/kohde/80511141">linkki</a></li>
-<li class="star">⭐ Inkoo, Vålö 567 | 250 k€ | hirsitalo 1911, 61 m² + lasiveranta, ~100 m rantaa (kaislikko, ruoppaustarve) | <a href="https://www.etuovi.com/kohde/21077860">linkki</a></li>
-<li class="star">⭐ Raasepori, Tammisaari — Laxtorpintie 146b | 198 k€ | 84 m² v. 1899 + RANTASAUNA, hyvä kunto — hinta/laatu-tähti | <a href="https://www.etuovi.com/kohde/80511752">linkki</a></li>
-<li class="star">⭐ Raasepori, Levolax — Killören | 248 k€ | 50 m² + rantasauna 25 m² (molemmat rem. 2021), ALLE 1 h Helsingistä | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/raasepori/24090890">linkki</a></li>
-<li class="star">⭐ Raasepori, Bromarv — Korsvikintie 71A | 295 k€ | 48/118 m² + tilava rantasauna 25 m² + laavu, pitkä ilta-aurinkoinen kallioranta, MANNER | <a href="https://www.etuovi.com/kohde/20738996">linkki</a></li>
-<li class="star">⭐ Raasepori, Hermansö — Tärnvik &amp; Örnäs I | 398 k€ | 72 m² + saunarak. + vierasmökki 32 m² + talousrak., yli 3 ha | <a href="https://www.etuovi.com/kohde/80508322">linkki</a></li>
-<li class="star">⭐ Raasepori, Hermansö — Björkviken | 296 k€ | 80/91 m² 4h+k + talousrak., 1,27 ha + oma vesialue, saari kivenheitto mantereesta | <a href="https://www.etuovi.com/kohde/21691946">linkki</a></li>
-<li class="star">⭐ Raasepori, Tammisaari — Björnholmen | 199 k€ | 73/103 m² + KAKSI saunaa (rantasauna + tynnyrisauna niemellä) + vierasmökki + kota | <a href="https://www.etuovi.com/kohde/582053">linkki</a></li>
-<li class="star">⭐ Raasepori, Bromarv — Svedjeholmen | 199 k€ | 50/90 m² saarimökki + saunarakennus + aitta + laituri | <a href="https://www.etuovi.com/kohde/20645757">linkki</a></li>
-<li class="star">⭐ Raasepori, Tammisaari — Stora Mistön | 395 k€ | idyllinen kalastajatila 1920, 130/140 m², 6,4 ha saarta, suojaisa lahti — vahva mökkifiilis | <a href="https://www.etuovi.com/kohde/80507476">linkki</a></li>
-<li class="star">⭐ Raasepori, Älgö | 249 k€ | merenrantahuvila 55/136 m² + saunarak. + talousrakennuksia, ~3 ha | <a href="https://www.etuovi.com/kohde/21112447">linkki</a></li>
-<li class="star">⭐ Raasepori, Dalkarö — Storholmen Norrstrand | 228 k€ | 43/57,5 m² + pyöröhirsinen SAVUSAUNA 25 m², rantaa 130 m + 82 m | <a href="https://www.etuovi.com/kohde/21000313">linkki</a></li>
+<li class="star"><span class="num">10.</span> ⭐ Kirkkonummi, Jorvas — saarikiinteistö | 650 k€ | 114 m² (3 mh) + vierasmökki 50 m² + rantasauna 40 m² + harrastetalo + aitta 1835; 200–400 m venematka | <a href="https://www.etuovi.com/kohde/w46442">linkki</a></li>
+<li class="star"><span class="num">11.</span> ⭐ Siuntio, Pickala — Kalvön saari | 460 k€ | 93 m² (2 mh) + sauna v. 1910 + 2 sähkölämmitteistä makuuaittaa, 2 ha, 110 m rantaa | <a href="https://www.etuovi.com/kohde/1395864">linkki</a></li>
+<li class="star"><span class="num">12.</span> ⭐ Inkoo, Ändholmsklobben | 490 k€ | KOKONAINEN OMA SAARI: tupa 48 m² + saunarakennus, ranta joka suuntaan | <a href="https://www.etuovi.com/kohde/20835637">linkki</a></li>
+<li class="star"><span class="num">13.</span> ⭐ Inkoo, Grundsö | 680 k€ | mökki 40 + vierasmökki 20 + rantasauna 30 m², 4,5 ha, syvä suojaisa lahti | <a href="https://www.etuovi.com/kohde/80506362">linkki</a></li>
+<li class="star"><span class="num">14.</span> ⭐ Inkoo, Storramsjö — Jakobramsjö Fisketorp | 295 k€ | 97/115 m² (2012), 2 mh + vierastupa + venevaja 53 m², kiviranta + laituri | <a href="https://www.etuovi.com/kohde/21389947">linkki</a></li>
+<li class="star"><span class="num">15.</span> ⭐ Inkoo, Barösund — Åkerholmen | 235 k€ | 52 m² tupa+parvi + saunamökki 30 m², 150 m rantaa, lyhyt venematka | <a href="https://www.etuovi.com/kohde/31412794">linkki</a></li>
+<li class="star"><span class="num">16.</span> ⭐ Inkoo, Ålö 450 | 260 k€ | 58 m² 3h + saunarak. + iso talousrak. 96 m² (kunto välttävä = työtä) | <a href="https://www.etuovi.com/kohde/20342490">linkki</a></li>
+<li class="star"><span class="num">17.</span> ⭐ Inkoo, Fagervik — Donnelsbackantie 76–78 | 398 k€ | 69/93 m² 4h + rantasauna jossa majoitustilaa, MANNER + tie perille | <a href="https://www.etuovi.com/kohde/80511141">linkki</a></li>
+<li class="star"><span class="num">18.</span> ⭐ Inkoo, Vålö 567 | 250 k€ | hirsitalo 1911, 61 m² + lasiveranta, ~100 m rantaa (kaislikko, ruoppaustarve) | <a href="https://www.etuovi.com/kohde/21077860">linkki</a></li>
+<li class="star"><span class="num">19.</span> ⭐ Raasepori, Tammisaari — Laxtorpintie 146b | 198 k€ | 84 m² v. 1899 + RANTASAUNA, hyvä kunto — hinta/laatu-tähti | <a href="https://www.etuovi.com/kohde/80511752">linkki</a></li>
+<li class="star"><span class="num">20.</span> ⭐ Raasepori, Levolax — Killören | 248 k€ | 50 m² + rantasauna 25 m² (molemmat rem. 2021), ALLE 1 h Helsingistä | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/raasepori/24090890">linkki</a></li>
+<li class="star"><span class="num">21.</span> ⭐ Raasepori, Bromarv — Korsvikintie 71A | 295 k€ | 48/118 m² + tilava rantasauna 25 m² + laavu, pitkä ilta-aurinkoinen kallioranta, MANNER | <a href="https://www.etuovi.com/kohde/20738996">linkki</a></li>
+<li class="star"><span class="num">22.</span> ⭐ Raasepori, Hermansö — Tärnvik &amp; Örnäs I | 398 k€ | 72 m² + saunarak. + vierasmökki 32 m² + talousrak., yli 3 ha | <a href="https://www.etuovi.com/kohde/80508322">linkki</a></li>
+<li class="star"><span class="num">23.</span> ⭐ Raasepori, Hermansö — Björkviken | 296 k€ | 80/91 m² 4h+k + talousrak., 1,27 ha + oma vesialue, saari kivenheitto mantereesta | <a href="https://www.etuovi.com/kohde/21691946">linkki</a></li>
+<li class="star"><span class="num">24.</span> ⭐ Raasepori, Tammisaari — Björnholmen | 199 k€ | 73/103 m² + KAKSI saunaa (rantasauna + tynnyrisauna niemellä) + vierasmökki + kota | <a href="https://www.etuovi.com/kohde/582053">linkki</a></li>
+<li class="star"><span class="num">25.</span> ⭐ Raasepori, Bromarv — Svedjeholmen | 199 k€ | 50/90 m² saarimökki + saunarakennus + aitta + laituri | <a href="https://www.etuovi.com/kohde/20645757">linkki</a></li>
+<li class="star"><span class="num">26.</span> ⭐ Raasepori, Tammisaari — Stora Mistön | 395 k€ | idyllinen kalastajatila 1920, 130/140 m², 6,4 ha saarta, suojaisa lahti — vahva mökkifiilis | <a href="https://www.etuovi.com/kohde/80507476">linkki</a></li>
+<li class="star"><span class="num">27.</span> ⭐ Raasepori, Älgö | 249 k€ | merenrantahuvila 55/136 m² + saunarak. + talousrakennuksia, ~3 ha | <a href="https://www.etuovi.com/kohde/21112447">linkki</a></li>
+<li class="star"><span class="num">28.</span> ⭐ Raasepori, Dalkarö — Storholmen Norrstrand | 228 k€ | 43/57,5 m² + pyöröhirsinen SAVUSAUNA 25 m², rantaa 130 m + 82 m | <a href="https://www.etuovi.com/kohde/21000313">linkki</a></li>
 </ul>
-
-<h3>Järvet — länsi (Lohja, Vihti, Karkkila, Salo, Tammela, Loppi, Hämeenlinna, Janakkala, Hausjärvi)</h3>
-
+<h3>Järvet — länsi (Lohja, Vihti, Karkkila, Salo, Tammela, Loppi, Hämeenlinna, Hattula, Janakkala, Hausjärvi)</h3>
 <ul>
-<li class="star">⭐ Loppi, Topeno — Kaartjärvi | 159 k€ | 75 m², 3 mh + 1950-l. perinteinen rantasauna takkatuvalla, 150–200 m omaa rantaa, hiekkapohja | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loppi/21948123">linkki</a></li>
-<li class="star">⭐ Loppi, Pilpala — Mustinlahdenkuja 72 | 195 k€ | 79 m² + rantasauna + 2 mh vierasaitta + iso talousrakennus, hiekkapohjainen ranta | <a href="https://www.etuovi.com/kohde/20911590">linkki</a></li>
-<li class="star">⭐ Loppi, Räyskälä — Kaartjärvi | 329 k€ | 115/140 m² + rantasauna portaat järveen, ~130 m rantaa, kirkasvetinen | <a href="https://www.etuovi.com/kohde/45010996">linkki</a></li>
-<li class="star">⭐ Salo, Kisko — Iso-Kisko | 349 k€ | 62/72 m² + saunamökki + uusi Honka-vierasaitta + puumaja, 1 ha, 88 m rantaa | <a href="https://www.etuovi.com/kohde/80519954">linkki</a></li>
-<li class="star">⭐ Salo, Suomusjärvi — Pahankorventie 134 | 382 k€ | 105 m² (2 mh + parvi) + 25 m² rantasauna + mökki, 7 054 m², ~1 h 15 min | <a href="https://www.etuovi.com/kohde/20537965">linkki</a></li>
-<li class="star">⭐ Salo, Piiljärvi | 178 k€ | 60 m² 1940 mummonmökki + 36 m² hirsirantasauna saunatuvalla, hiekkaranta (tontti vain 985 m²) | <a href="https://www.etuovi.com/kohde/66907145">linkki</a></li>
-<li class="star">⭐ Salo, Kruusila — Kakarlammi | 165 k€ | 59 m² + 11,4 ha omaa metsää, ~100 m rantaa, lähdekirkasvesi (majoitus suppea) | <a href="https://www.etuovi.com/kohde/80495784">linkki</a></li>
-<li class="star">⭐ Lohja, Karjalohja — Prännäistenmäki | 199 k€ | 55 m², 3h + rantasauna + aitta, Lohjanjärvi, uusi laituri 2025 (kunto tyydyttävä) | <a href="https://www.etuovi.com/kohde/80519331">linkki</a></li>
-<li class="star">⭐ Lohja, Lehmijärvi — Saarikonmaa | 169 k€ | 66 m², 3 mh + rantasauna + nukkuma-aitta, alle tunti Helsingistä | <a href="https://www.etuovi.com/kohde/51846159">linkki</a></li>
-<li class="star">⭐ Lohja, Pusula — Saarijärvi | 189 k€ | 51 m² + rantasauna/saunatupa, 10 500 m² NIEMENKÄRKI, ~200 m rantaa | <a href="https://www.etuovi.com/kohde/21617640">linkki</a></li>
-<li class="star">⭐ Lohja, Pusula — Tarkeelanjärvi | 280 k€ | 40 m² remontoitu hirsimökki + vierasmökki + 2 varastoa, 70 m rantaa | <a href="https://www.etuovi.com/kohde/fe8886">linkki</a></li>
-<li class="star">⭐ Lohja, Karjalohja — Vähä Kurkjärvi | 189 k€ | 46 m² + vierasaitta (2002), 8 390 m², 90 m etelärantaa | <a href="https://www.etuovi.com/kohde/54787651">linkki</a></li>
-<li class="star">⭐ Lohja, Hermala — Lohjanjärvi | 565 k€ | 140 m² 1956 + hirsirantasauna tuvalla + 1930-l. torppa (remontoitava), 16,5 ha, ~200 m rantaa | <a href="https://www.etuovi.com/kohde/21590816">linkki</a></li>
-<li class="star">⭐ Lohja, Nummijärvi | 245 k€ | 80 m² + aitta + kesähuone; rantasaunalle valmis 30 m² rakennusoikeus | <a href="https://www.etuovi.com/kohde/21854744">linkki</a></li>
-<li class="star">⭐ Lohja, Nummijärvi/Enäjärvi (Sammatti) — Nokka 1 | 218 k€ | 60 m² tupa + parvet + huone omalla sisäänkäynnillä + sauna | <a href="https://www.etuovi.com/kohde/21455026">linkki</a></li>
-<li class="star">⭐ Vihti, Moksi — Moksjärvi | 285 k€ | 90 m² 2000 + erillinen rantasauna + kesäkeittiö, ~100 m rantaa, 45 km Helsingistä | <a href="https://www.etuovi.com/kohde/21100847">linkki</a></li>
-<li class="star">⭐ Vihti, Iso Myllylampi | 290 k€ | 80 m² huvila + rantasauna, 1,15 ha (5 ha kokonaisuus niemineen ostettavissa), lähdekirkasvesi, 30 min! | <a href="https://www.etuovi.com/kohde/80502214">linkki</a></li>
-<li class="star">⭐ Vihti, Vihtijärvi — Lapoonjärvi | 159 k€ | 46/73 m² 2014 + 2 saunarakennusta (toinen vesirajassa), rak.oikeutta jäljellä | <a href="https://www.etuovi.com/kohde/80492834">linkki</a></li>
-<li class="star">⭐ Vihti, Tervalampi | 177 k€ | 50 m² 1953, 7 500 m², ~100 m omaa rantaa | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/vihti/21113723">linkki</a></li>
-<li class="star">⭐ Karkkila, Vattola — Tämäkohtujärvi | 215 k€ | 30/42 m² 2017 + hirsiaitta vierasmajaksi, kirkasvetinen (pienehkö kokonaisuus) | <a href="https://www.etuovi.com/kohde/80459763">linkki</a></li>
-<li class="star">⭐ Tammela, Porras — Leppilampi | 170 k€ | 95 m², 2 mh + rantasauna 18 m² + autotalli/varasto 63 m², harjualueen hiekkaranta | <a href="https://www.etuovi.com/kohde/55548536">linkki</a></li>
-<li class="star">⭐ Hämeenlinna, Lammi — Kataloistenjärvi | 198 k€ | 70/100 m², 2h + 2 nukkuma-aittaa + rantasauna + grillikota, loiva lapsiranta | <a href="https://www.etuovi.com/kohde/21419335">linkki</a></li>
-<li class="star">⭐ Hämeenlinna, Lieso — Kuohijärvi | 269 k€ | 65/79 m² 2002, 3h + rantasauna, kirkasvetinen (~1 h 45 min) | <a href="https://www.etuovi.com/kohde/616981">linkki</a></li>
-<li class="star">⭐ Hämeenlinna, Katumajärvi — Kappolan Rantatie 174 | 268 k€ | 79 m² 4h (3 mh) + hirsirantasauna 1999 veden äärellä (Etuovi-ilmoitus poistunut — tarkista onko yhä myynnissä) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/h%C3%A4meenlinna/24563147">linkki</a></li>
-<li class="star">⭐ Janakkala, Saloinen — Isojärvi | 249 k€ | 81,5 m² 2007, 3h + erillinen rantasauna terasseineen, kovapohjainen hiekkaranta | <a href="https://www.etuovi.com/kohde/80510819">linkki</a></li>
-<li class="star">⭐ Hausjärvi, Torhola — Pursijärvi | 198 k€ | 66/85 m² 2002, 2 mh + rantasauna — lyhin matka Helsingistä (ranta kapea ~20 m) | <a href="https://www.etuovi.com/kohde/1407571">linkki</a></li>
+<li class="star"><span class="num">29.</span> ⭐ Loppi, Pilpala — Mustinlahdenkuja 72 | 195 k€ | 79 m² + rantasauna + 2 mh vierasaitta + iso talousrakennus, hiekkapohjainen ranta | <a href="https://www.etuovi.com/kohde/20911590">linkki</a></li>
+<li class="star"><span class="num">30.</span> ⭐ Loppi, Räyskälä — Kaartjärvi | 329 k€ | 115/140 m² + rantasauna portaat järveen, ~130 m rantaa, kirkasvetinen | <a href="https://www.etuovi.com/kohde/45010996">linkki</a></li>
+<li class="star"><span class="num">31.</span> ⭐ Salo, Kisko — Iso-Kisko "Rannanpelto" | 349 k€ | yhteensä 8 rakennusta: päämökki 1992 (2 mh + parvi) + saunamökki + uusi Honka-vierasaitta 2012 + venevaja + varastot + puumaja, tasan 1 ha, 88 m rantaa | <a href="https://www.etuovi.com/kohde/80519954">linkki</a></li>
+<li class="star"><span class="num">32.</span> ⭐ Salo, Suomusjärvi — Pahankorventie 134 | 382 k€ | 105 m² (2 mh + parvi) + 25 m² rantasauna + mökki, 7 054 m², ~1 h 15 min | <a href="https://www.etuovi.com/kohde/20537965">linkki</a></li>
+<li class="star"><span class="num">33.</span> ⭐ Salo, Piiljärvi | 178 k€ | 60 m² 1940 mummonmökki + 36 m² hirsirantasauna saunatuvalla, hiekkaranta (tontti vain 985 m²) | <a href="https://www.etuovi.com/kohde/66907145">linkki</a></li>
+<li class="star"><span class="num">34.</span> ⭐ Salo, Kruusila — Kakarlammi | 165 k€ | 59 m² + 11,4 ha omaa metsää, ~100 m rantaa, lähdekirkasvesi (majoitus suppea) | <a href="https://www.etuovi.com/kohde/80495784">linkki</a></li>
+<li class="star"><span class="num">35.</span> ⭐ Lohja, Karjalohja — Prännäistenmäki | 199 k€ | 55 m², 3h + rantasauna + aitta, Lohjanjärvi, uusi laituri 2025 (kunto tyydyttävä) | <a href="https://www.etuovi.com/kohde/80519331">linkki</a></li>
+<li class="star"><span class="num">36.</span> ⭐ Lohja, Lehmijärvi — Saarikonmaa | 169 k€ | 66 m², 3 mh + rantasauna + nukkuma-aitta, alle tunti Helsingistä | <a href="https://www.etuovi.com/kohde/51846159">linkki</a></li>
+<li class="star"><span class="num">37.</span> ⭐ Lohja, Pusula — Saarijärvi | 189 k€ | 51 m² + rantasauna/saunatupa, 10 500 m² NIEMENKÄRKI, ~200 m rantaa | <a href="https://www.etuovi.com/kohde/21617640">linkki</a></li>
+<li class="star"><span class="num">38.</span> ⭐ Lohja, Pusula — Tarkeelanjärvi | 280 k€ | 40 m² remontoitu hirsimökki + vierasmökki + 2 varastoa, 70 m rantaa | <a href="https://www.etuovi.com/kohde/fe8886">linkki</a></li>
+<li class="star"><span class="num">39.</span> ⭐ Lohja, Karjalohja — Vähä Kurkjärvi | 189 k€ | 46 m² + vierasaitta (2002), 8 390 m², 90 m etelärantaa | <a href="https://www.etuovi.com/kohde/54787651">linkki</a></li>
+<li class="star"><span class="num">40.</span> ⭐ Lohja, Hermala — Lohjanjärvi | 565 k€ | 140 m² 1956 + hirsirantasauna tuvalla + 1930-l. torppa (remontoitava), 16,5 ha, ~200 m rantaa | <a href="https://www.etuovi.com/kohde/21590816">linkki</a></li>
+<li class="star"><span class="num">41.</span> ⭐ Lohja, Nummijärvi | 245 k€ | 80 m² + aitta + kesähuone; rantasaunalle valmis 30 m² rakennusoikeus | <a href="https://www.etuovi.com/kohde/21854744">linkki</a></li>
+<li class="star"><span class="num">42.</span> ⭐ Lohja, Nummijärvi/Enäjärvi (Sammatti) — Nokka 1 | 218 k€ | 60 m² tupa + parvet + huone omalla sisäänkäynnillä + sauna | <a href="https://www.etuovi.com/kohde/21455026">linkki</a></li>
+<li class="star"><span class="num">43.</span> 🆕⭐ Lohja, Lohjansaari — Uukusaarentie 78 | 248 k€ | KOLMEN mökin kokonaisuus: 2-krs käsinveistetty hirsipäämökki + kunnostettu nukkumamökki + rantasauna oleskelutiloineen, suojaisa hiekkaranta + laituri + ilta-aurinko, Lohjanjärvi, ~1 h (tontti 2 930 m²) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/24494492">linkki</a></li>
+<li class="star"><span class="num">44.</span> 🆕⭐ Lohja, Mynterlä — Tukkilautantie 34 | 298 k€ | v. 1950 puutarhatila: 99 m² 6h+k + rantasauna aivan vesirajassa + leikkimökki, 2 kiinteistöä yht. 11 607 m², ~90 m lapsiystävällistä rantaa, rak.oikeutta, ~50 min (Hiidenvesi/Väänteenjoki samea) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/24315404">linkki</a></li>
+<li class="star"><span class="num">45.</span> ⭐ Vihti, Moksi — Moksjärvi | 285 k€ | 90 m² 2000 + erillinen rantasauna + kesäkeittiö, ~100 m rantaa, 45 km Helsingistä | <a href="https://www.etuovi.com/kohde/21100847">linkki</a></li>
+<li class="star"><span class="num">46.</span> ⭐ Vihti, Iso Myllylampi | 290 k€ | 80 m² huvila + rantasauna, 1,15 ha (5 ha kokonaisuus niemineen ostettavissa), lähdekirkasvesi, 30 min! | <a href="https://www.etuovi.com/kohde/80502214">linkki</a></li>
+<li class="star"><span class="num">47.</span> ⭐ Vihti, Vihtijärvi — Lapoonjärvi | 159 k€ | 46/73 m² 2014 + 2 saunarakennusta (toinen vesirajassa), rak.oikeutta jäljellä | <a href="https://www.etuovi.com/kohde/80492834">linkki</a></li>
+<li class="star"><span class="num">48.</span> ⭐ Karkkila, Vattola — Tämäkohtujärvi | 215 k€ | 30/42 m² 2017 + hirsiaitta vierasmajaksi, kirkasvetinen (pienehkö kokonaisuus) | <a href="https://www.etuovi.com/kohde/80459763">linkki</a></li>
+<li class="star"><span class="num">49.</span> ⭐ Tammela, Porras — Leppilampi | 170 k€ | 95 m², 2 mh + rantasauna 18 m² + autotalli/varasto 63 m², harjualueen hiekkaranta | <a href="https://www.etuovi.com/kohde/55548536">linkki</a></li>
+<li class="star"><span class="num">50.</span> ⭐ Hämeenlinna, Lammi — Kataloistenjärvi | 198 k€ | 70/100 m², 2h + 2 nukkuma-aittaa + rantasauna + grillikota, loiva lapsiranta | <a href="https://www.etuovi.com/kohde/21419335">linkki</a></li>
+<li class="star"><span class="num">51.</span> ⭐ Hämeenlinna, Lieso — Kuohijärvi | 269 k€ | 65/79 m² 2002, 3h + rantasauna, kirkasvetinen (~1 h 45 min) | <a href="https://www.etuovi.com/kohde/616981">linkki</a></li>
+<li class="star"><span class="num">52.</span> 🆕⭐ Hämeenlinna, Hauho — Rukkoilantie 251 (Iso-Roine) | 329 k€ | 90/105 m² KAHDEN SUKUPOLVEN pohja: 2 keittiötä, 2 kph, omat sisäänkäynnit molempiin päihin + historiallinen SAVUSAUNA, 2,07 ha, 100 m omaa etelärantaa isolla Iso-Roineella, ~1 h 50 (kunto kohtalainen, kosteusjälkiä ei tutkittu, perikuntamyynti) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hameenlinna/24374127">linkki</a></li>
+<li class="star"><span class="num">53.</span> 🆕⭐ Hämeenlinna, Tuulos — Pikku-Mustilantie 72 (Avusjärvi) | 169 k€ | pihapiirikokonaisuus: päärakennus 1952/perusparannettu 2018 + hirsirantasauna saunatuvalla 1981 + piharakennus kesähuoneineen + kesäkeittiö + laavu, 1,58 ha, puhdas vesistö, ~1 h 30 (vain 1 varsinainen mh — muut kesähuoneita) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hameenlinna/24426320">linkki</a></li>
+<li class="star"><span class="num">54.</span> 🆕⭐ Hattula, Rimmilä — Lintusaarentie 24 B | 479 k€ | 80 m² mökki (sisäremontit 2023) + erillinen hirsirantasauna, 2 ha oma tontti, 200 m omaa rantaviivaa + HIEKKARANTA, Takajärvi, perinnemaisema, ~1 h 25 (mh-määrä epäselvä, hinta ylälaidassa — vaatii esitteen) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hattula/23475877">linkki</a></li>
+<li class="star"><span class="num">55.</span> ⭐ Janakkala, Saloinen — Isojärvi | 249 k€ | 81,5 m² 2007, 3h + erillinen rantasauna terasseineen, kovapohjainen hiekkaranta | <a href="https://www.etuovi.com/kohde/80510819">linkki</a></li>
+<li class="star"><span class="num">56.</span> 🆕⭐ Janakkala, Koljala — Lammintie 1100 (Isojärvi) | 270 k€ | ~200 m² hirsirunkoinen persoonallinen kesähuvila v. 1910 (6h + sauna), 6,4–7,4 ha maata, 140–240 m omaa rantaa, kukkulamaasto, reilu tunti pk-seudulta (⚠️ myyjä pidättää ~1 ha rantamääräalan, ostettavissa +65 k€ — naapuririski selvitettävä; 1910-kunto tarkistettava) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/janakkala/24564942">linkki</a></li>
+<li class="star"><span class="num">57.</span> ⭐ Hausjärvi, Torhola — Pursijärvi | 198 k€ | 66/85 m² 2002, 2 mh + rantasauna — lyhin matka Helsingistä (ranta kapea ~20 m) | <a href="https://www.etuovi.com/kohde/1407571">linkki</a></li>
 </ul>
-
 <h3>Järvet — itä (Asikkala, Padasjoki, Heinola, Iitti, Hollola, Lahti)</h3>
-
 <ul>
-<li class="star">⭐ Asikkala, Vesansalo | 365 k€ | 67,5 m² Kontio 2005 + vierastupa, oma Päijänne-hiekkaranta + poijulaituri, tie perille, talviasuttava (sauna sisällä, ei vesirajassa) | <a href="https://www.etuovi.com/kohde/20138036">linkki</a></li>
-<li class="star">⭐ Padasjoki, Virmaila — Soramäentie 88–89 | 368 k€ | veistetty hirsipäätalo 118 m² (3 mh) + piharakennus 48 m² + SAVUSAUNA 2014, oma Päijänne-ranta, tie perille | <a href="https://www.etuovi.com/kohde/21194614">linkki</a></li>
-<li class="star">⭐ Padasjoki, Kellosalmi — Soramäentie 446 | 249 k€ ↓269 | 120/140 m², 3 mh + vierasmökki + venevaja + grillikatos + autotalli, kovapohjainen Päijänne-ranta + uusi laituri | <a href="https://www.etuovi.com/kohde/579938">linkki</a></li>
-<li class="star">⭐ Padasjoki, Vohlasaarentie 54 | 365 k€ | pieni päämökki + vierasmökki + saunarakennus, yli 130 m Päijänne-rantaa NIEMENKÄRJESSÄ, autolla perille (rakennukset pieniä/kunnostettavia) | <a href="https://www.etuovi.com/kohde/80521590">linkki</a></li>
-<li class="star">⭐ Heinola, Salaniemi 82 | 199 k€ | 75,4 m² höylähirsi 1994, 3 mh + UUSI rantasauna 2023 + hirsiaitta + grillikota, 50 m hiekkaranta, tie perille | <a href="https://www.etuovi.com/kohde/41190107">linkki</a></li>
-<li class="star">⭐ Heinola, Lusi — Kiekkastentie 241 A | 158 k€ | 61/69 m², 3 mh + parvi + sauna (pieni Pirttijärvi) | <a href="https://www.etuovi.com/kohde/616772">linkki</a></li>
-<li class="star">⭐ Iitti, Maasaarentie 29 | 179 k€ | päämökki 22 + vierasmökki 28 m² + rantasauna + aitta, 55 m rantaa kirkasvetisellä Konnivedellä | <a href="https://www.etuovi.com/kohde/622350">linkki</a></li>
-<li class="star">⭐ Iitti, Maasaarentie 79c | 228 k€ | KAKSI hirsimökkiä ~80 m² + tunnelmallinen rantasauna + venevaja, Konnivesi, etelärinne (tieyhteys varmistettava) | <a href="https://www.etuovi.com/kohde/53165084">linkki</a></li>
-<li class="star">⭐ Iitti, Hiidensaari | 295 k€ (tarjouskauppa) | 65 m², 2–3 mh + vierasmökki + kesäkeittiö + sauna, Konnivesi, tieyhteys saareen | <a href="https://www.etuovi.com/kohde/21496853">linkki</a></li>
-<li class="star">⭐ Iitti, Vuolenkoski — Lapinsaarentie 101 | 495 k€ | 83 m² 1993 + upouusi lattialämmitetty hirsirantasauna, Konnivesi, veneillen Heinolaan | <a href="https://www.etuovi.com/kohde/20683354">linkki</a></li>
-<li class="star">⭐ Iitti, Huutotöyry — Taipaleentie 461 b | 498 k€ | 112/133 m² hirsi 1992 + puulämmitteinen rantasauna + sisäsauna, pitkä rantaviiva, 11 470 m² | <a href="https://www.etuovi.com/kohde/80506072">linkki</a></li>
-<li class="star">⭐ Iitti, Huutotöyry — Patoniementie 54 | 649 k€ ↓750 | päämökki + vierasmökki (tupak+parvi+sauna) + rantasauna + autokatos, Konnivesi — täsmälleen haettu kokonaisuus | <a href="https://www.etuovi.com/kohde/80508538">linkki</a></li>
-<li class="star">⭐ Lahti, Immilä — Mahlavuorentie 45 | 290 k€ | 50/66 m² 2012 + vierasaitta + rantasauna + kesäkeittiö, kirkasvetinen Ruuhijärvi (tontti 1 900 m²) | <a href="https://www.etuovi.com/kohde/80510039">linkki</a></li>
+<li class="star"><span class="num">58.</span> ⭐ Asikkala, Vesansalo | 365 k€ | 67,5 m² Kontio 2005 + vierastupa, oma Päijänne-hiekkaranta + poijulaituri, tie perille, talviasuttava (sauna sisällä, ei vesirajassa) | <a href="https://www.etuovi.com/kohde/20138036">linkki</a></li>
+<li class="star"><span class="num">59.</span> ⭐ Padasjoki, Virmaila — Soramäentie 88–89 | 368 k€ | veistetty hirsipäätalo 118 m² (3 mh) + piharakennus 48 m² + SAVUSAUNA 2014, oma Päijänne-ranta, tie perille | <a href="https://www.etuovi.com/kohde/21194614">linkki</a></li>
+<li class="star"><span class="num">60.</span> ⭐ Padasjoki, Kellosalmi — Soramäentie 446 | 249 k€ ↓269 | 120/140 m², 3 mh + vierasmökki + venevaja + grillikatos + autotalli, kovapohjainen Päijänne-ranta + uusi laituri | <a href="https://www.etuovi.com/kohde/579938">linkki</a></li>
+<li class="star"><span class="num">61.</span> ⭐ Padasjoki, Vohlasaarentie 54 | 365 k€ | pieni päämökki + vierasmökki + saunarakennus, yli 130 m Päijänne-rantaa NIEMENKÄRJESSÄ, autolla perille (rakennukset pieniä/kunnostettavia) | <a href="https://www.etuovi.com/kohde/80521590">linkki</a></li>
+<li class="star"><span class="num">62.</span> ⭐ Heinola, Salaniemi 82 | 199 k€ | 75,4 m² höylähirsi 1994, 3 mh + UUSI rantasauna 2023 + hirsiaitta + grillikota, 50 m hiekkaranta, tie perille | <a href="https://www.etuovi.com/kohde/41190107">linkki</a></li>
+<li class="star"><span class="num">63.</span> ⭐ Heinola, Lusi — Kiekkastentie 241 A | 158 k€ | 61/69 m², 3 mh + parvi + sauna (pieni Pirttijärvi) | <a href="https://www.etuovi.com/kohde/616772">linkki</a></li>
+<li class="star"><span class="num">64.</span> ⭐ Iitti, Maasaarentie 29 | 179 k€ | päämökki 22 + vierasmökki 28 m² + rantasauna + aitta, 55 m rantaa kirkasvetisellä Konnivedellä | <a href="https://www.etuovi.com/kohde/622350">linkki</a></li>
+<li class="star"><span class="num">65.</span> ⭐ Iitti, Maasaarentie 79c | 228 k€ | KAKSI hirsimökkiä ~80 m² + tunnelmallinen rantasauna + venevaja, Konnivesi, etelärinne (tieyhteys varmistettava) | <a href="https://www.etuovi.com/kohde/53165084">linkki</a></li>
+<li class="star"><span class="num">66.</span> ⭐ Iitti, Hiidensaari | 295 k€ (tarjouskauppa) | 65 m², 2–3 mh + vierasmökki + kesäkeittiö + sauna, Konnivesi, tieyhteys saareen | <a href="https://www.etuovi.com/kohde/21496853">linkki</a></li>
+<li class="star"><span class="num">67.</span> ⭐ Iitti, Vuolenkoski — Lapinsaarentie 101 | 495 k€ | 83 m² 1993 + upouusi lattialämmitetty hirsirantasauna, Konnivesi, veneillen Heinolaan | <a href="https://www.etuovi.com/kohde/20683354">linkki</a></li>
+<li class="star"><span class="num">68.</span> ⭐ Iitti, Huutotöyry — Taipaleentie 461 b | 498 k€ | 112/133 m² hirsi 1992 + puulämmitteinen rantasauna + sisäsauna, pitkä rantaviiva, 11 470 m² | <a href="https://www.etuovi.com/kohde/80506072">linkki</a></li>
+<li class="star"><span class="num">69.</span> ⭐ Iitti, Huutotöyry — Patoniementie 54 | 649 k€ ↓750 | päämökki + vierasmökki (tupak+parvi+sauna) + rantasauna + autokatos, Konnivesi — täsmälleen haettu kokonaisuus | <a href="https://www.etuovi.com/kohde/80508538">linkki</a></li>
+<li class="star"><span class="num">70.</span> ⭐ Lahti, Immilä — Mahlavuorentie 45 | 290 k€ | 50/66 m² 2012 + vierasaitta + rantasauna + kesäkeittiö, kirkasvetinen Ruuhijärvi (tontti 1 900 m²) | <a href="https://www.etuovi.com/kohde/80510039">linkki</a></li>
+<li class="star"><span class="num">71.</span> 🆕⭐ Hollola, Hämeenkoski — Pääjärventie 127 | 339 k€ | 171 m² huvila 1989 (perusk. 2010-l.), 3 mh + rantasauna KIINNI VEDESSÄ (perusk. 2017, "sijainti jollaista ei enää saa rakentaa") + lämmin autotalli + tenniskenttä, 120 m omaa rantaa, syvä kirkasvetinen Pääjärvi (HY:n tutkimusjärvi), ~1 h 15 (tontti 3 600 m²; tyyli arkkitehtihuvila — kuvat ratkaisevat) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hollola/24453979">linkki</a></li>
 </ul>
-
 <hr>
-
-<h2>~ RAJATAPAUKSET (valikoituja — täysi lista agenttiraporteissa)</h2>
-
-<h3>Meri</h3>
+<h2>~ RAJATAPAUKSET (66 kpl) — nopea veto/nosto riittää</h2>
+<h3>Meri (+ länsipään järvet)</h3>
 <ul>
-<li class="maybe">~ Sipoo, Mölandet N:o 4 | 625 k€ | 1927/täysrem. 2022 + rantasauna (2 mh; &quot;New England&quot; -design; vene) | <a href="https://www.etuovi.com/kohde/20277048">linkki</a></li>
-<li class="maybe">~ Porvoo, Pellinki — Ängesholmen 66 | 225 k€ | 30/50 m² saunamökki 2020, 4 ha, 200 m rantaa (majoitus ei riitä ilman rakentamista) | <a href="https://www.etuovi.com/kohde/80503245">linkki</a></li>
-<li class="maybe">~ Porvoo, Bässholmen 56 | 210 k€ | 30 m² + 25 m² vierasmaja, 100 m kalliorantaa, täysi yksityisyys (pieni; vene) | <a href="https://www.etuovi.com/kohde/80499650">linkki</a></li>
-<li class="maybe">~ Loviisa, Kuninkaankylä — Fontellintie 130 | 425 k€ | Honka 2011–13 + pihasauna, 2,2 ha, 250 m rantaa + hiekkaranta (JÄRVI; moderni hirsihuvila -riski; ~1 h) | <a href="https://www.etuovi.com/kohde/1409248">linkki</a></li>
-<li class="maybe">~ Loviisa, Svartholmen 16 | 240 k€ | 35 m² vanha hirsimökki + pyöröhirsisauna, syvä luonnonsatama, rak.oikeutta (pieni mutta laajennettavissa) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/16876198">linkki</a></li>
-<li class="maybe">~ Inkoo, Tostholm (Svartö) | 295 k€ | 50/82 m² + rantasauna, 70 m rantaa, rak.oikeutta 230 k-m² (pieni nyt, iso laajennusvara) | <a href="https://www.etuovi.com/kohde/20124842">linkki</a></li>
-<li class="maybe">~ Inkoo, Elisaari/Älgsjö — vanha tila | 265 k€ | 75 m² saaristotila + rantasauna + venevaja + aitta + talli (⚠️ rantakirjaus &quot;oikeus vesialueisiin&quot;, kunto välttävä) | <a href="https://www.etuovi.com/kohde/20668982">linkki</a></li>
-<li class="maybe">~ Raasepori, Uvalantie 205B | 368 k€ | UUSI 2024: tupa + saunarak. vierashuoneella, niemenkärki + oma pikkusaari (upea ranta; pieni &amp; uusi) | <a href="https://www.etuovi.com/kohde/21049651">linkki</a></li>
-<li class="maybe">~ Raasepori, Kårböle — Trollsjöntie 116a | 300 k€ | 30 m² + saunarak., yli 4 ha, PITKÄ meriranta (rakennukset pienet) | <a href="https://www.etuovi.com/kohde/21656304">linkki</a></li>
-<li class="maybe">~ Raasepori, Karjaa — Niemimäentie 120 | 155 k€ | KOLME mökkiä Kirkkojärvellä (vesijättöä) | <a href="https://www.etuovi.com/kohde/80513924">linkki</a></li>
-<li class="maybe">~ Raasepori, Björnholmen — Björnberget 4/4 | 290 k€ | 63 m² ympärivuotinen 1999 + rantasauna + järeä laituri (rantakirjaus varmistettava) | <a href="https://www.etuovi.com/kohde/80500339">linkki</a></li>
-<li class="maybe">~ Raasepori, Bromarv — Svedjeholmen Länsi | 200 k€ | tupa+sauna 26 m², PUOLIKAS SAARI (yksityisyys 10/10, tilat minimit) | <a href="https://www.etuovi.com/kohde/558992">linkki</a></li>
-<li class="maybe">~ Hanko, Tränuholmen 7 | 698 k€ | 70 m² 2024 + vierasmökki + sauna (uusi — ei perinnefiilis) | <a href="https://www.etuovi.com/kohde/80471915">linkki</a></li>
-<li class="maybe">~ Kirkkonummi, Kylmälä — Heparintie 78 | 270 k€ | 100 m² 1939 + kunnostettu rantasauna, järvi, 30 min Hki (vain 2 mh) | <a href="https://www.etuovi.com/kohde/2274455">linkki</a></li>
-<li class="maybe">~ Siuntio, Stornäsbyntie 34A | 148 k€ (alle haarukan!) | päämökki + saunamökki + vierasaitta + palju 2025, Karhujärvi — kolmen rakennuksen profiili pikkurahalla | <a href="https://www.etuovi.com/kohde/20581850">linkki</a></li>
+<li class="maybe"><span class="num">72.</span> ~ Sipoo, Mölandet N:o 4 | 625 k€ | 1927/täysrem. 2022 + rantasauna (2 mh; "New England" -design; vene) | <a href="https://www.etuovi.com/kohde/20277048">linkki</a></li>
+<li class="maybe"><span class="num">73.</span> ~ Porvoo, Pellinki — Ängesholmen 66 | 225 k€ | 30/50 m² saunamökki 2020, 4 ha, 200 m rantaa (majoitus ei riitä ilman rakentamista) | <a href="https://www.etuovi.com/kohde/80503245">linkki</a></li>
+<li class="maybe"><span class="num">74.</span> ~ Porvoo, Bässholmen 56 | 210 k€ | 30 m² + 25 m² vierasmaja, 100 m kalliorantaa, täysi yksityisyys (pieni; vene) | <a href="https://www.etuovi.com/kohde/80499650">linkki</a></li>
+<li class="maybe"><span class="num">75.</span> 🆕~ Porvoo, Vessö Skavarböle — Möholmintie 62 | 570 k€ | 101 m² puuhuvila 2002 + sauna-vierasmökki rannassa, 1,3 ha, 60 m rantaa, avomerinäkymä (vain ~2 mh) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/24409669">linkki</a></li>
+<li class="maybe"><span class="num">76.</span> 🆕~ Porvoo, Bodö (Onas) | 165 k€ | saunamökki 1997 + jalasmökki 2020, 1,6 ha, oma ranta + laituri, kauppalaiva käy saaressa (majoitus suppea) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/24539276">linkki</a></li>
+<li class="maybe"><span class="num">77.</span> 🆕~ Porvoo, Fagersta — Laduholmen 96 | 165 k€ | 50 m² kalliotontin laella + helppo hiekkaranta, 9 450 m², suojaisa Långfjärden, sähkö (1 mh + parvi; viereinen 1,13 ha lisämaa 20 k€) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/porvoo/24443199">linkki</a></li>
+<li class="maybe"><span class="num">78.</span> ~ Loviisa, Kuninkaankylä — Fontellintie 130 | 425 k€ | Honka 2011–13 + pihasauna, 2,2 ha, 250 m rantaa + hiekkaranta (JÄRVI; moderni hirsihuvila -riski; ~1 h) | <a href="https://www.etuovi.com/kohde/1409248">linkki</a></li>
+<li class="maybe"><span class="num">79.</span> 🆕~ Loviisa, Vahterpää — Lilla Glosholmen 10 | 198 k€ | päämökki 54 m² (3h) + saunarakennus oman hiekkarannan vieressä + tynnyrisauna-vierasmökki + kota, 4 150 m² saaritontti, lyhyt venematka (talousvesi tuotava) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24453878">linkki</a></li>
+<li class="maybe"><span class="num">80.</span> 🆕~ Loviisa, Lappom — Akantie 56 B | 220 k€ | päärakennus 39 m² + vierasmökki omalla keittiöllä + saunarakennus + grillikota, 6 060 m², merelle laskeutuva piha (⚠️ rantaviivan omistus varmistettava) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24539531">linkki</a></li>
+<li class="maybe"><span class="num">81.</span> 🆕~ Loviisa, Lappom — Hirventie 38 | 155 k€ | mökki + saunatupa + aitta 2008 + OMA PIENI LUOTO, 7 200 m² (kapasiteetti pieni: alkovi+aitta) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24404630">linkki</a></li>
+<li class="maybe"><span class="num">82.</span> 🆕~ Loviisa, Grönören (Lappom) | 169 k€ | ulkosaariston saari jossa EI YHTÄÄN muuta mökkiä, 45 m² 4h+s, avomerinäkymä (30 min venematka; tontti 2 300 m²) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24529018">linkki</a></li>
+<li class="maybe"><span class="num">83.</span> 🆕~ Loviisa, Rönnäs — Ruukinrannantie 75 | 450 k€ | 128 m² täysremontoitu merenrantahuvila + 30 m ponttonilaituri/oma satama, aurinkovoimala (vain 2 mh; varusteluluksus, ei perinnefiilis) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loviisa/24569049">linkki</a></li>
+<li class="maybe"><span class="num">84.</span> 🆕~ Pyhtää, Munapirtti — Kivikarintie 55 | 560 k€ | Honka 2008, 125 m², 3 isoa mh + parvi, matala hiekkapohjainen ranta (omakotitalomainen — omistaja hakenut OKT-poikkeamislupaa) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/pyht%C3%A4%C3%A4/24605091">linkki</a></li>
+<li class="maybe"><span class="num">85.</span> ~ Inkoo, Tostholm (Svartö) | 295 k€ | 50/82 m² + rantasauna, 70 m rantaa, rak.oikeutta 230 k-m² (pieni nyt, iso laajennusvara) | <a href="https://www.etuovi.com/kohde/20124842">linkki</a></li>
+<li class="maybe"><span class="num">86.</span> ~ Inkoo, Elisaari/Älgsjö — vanha tila | 265 k€ | 75 m² saaristotila + rantasauna + venevaja + aitta + talli (⚠️ rantakirjaus "oikeus vesialueisiin", kunto välttävä) | <a href="https://www.etuovi.com/kohde/20668982">linkki</a></li>
+<li class="maybe"><span class="num">87.</span> ~ Raasepori, Uvalantie 205B | 368 k€ | UUSI 2024: tupa + saunarak. vierashuoneella, niemenkärki + oma pikkusaari (upea ranta; pieni &amp; uusi) | <a href="https://www.etuovi.com/kohde/21049651">linkki</a></li>
+<li class="maybe"><span class="num">88.</span> ~ Raasepori, Kårböle — Trollsjöntie 116a | 300 k€ | 30 m² + saunarak., yli 4 ha, PITKÄ meriranta (rakennukset pienet) | <a href="https://www.etuovi.com/kohde/21656304">linkki</a></li>
+<li class="maybe"><span class="num">89.</span> ~ Raasepori, Karjaa — Niemimäentie 120 | 155 k€ | KOLME mökkiä Kirkkojärvellä (vesijättöä) | <a href="https://www.etuovi.com/kohde/80513924">linkki</a></li>
+<li class="maybe"><span class="num">90.</span> ~ Raasepori, Björnholmen — Björnberget 4/4 | 290 k€ | 63 m² ympärivuotinen 1999 + rantasauna + järeä laituri (rantakirjaus varmistettava) | <a href="https://www.etuovi.com/kohde/80500339">linkki</a></li>
+<li class="maybe"><span class="num">91.</span> ~ Raasepori, Bromarv — Svedjeholmen Länsi | 200 k€ | tupa+sauna 26 m², PUOLIKAS SAARI (yksityisyys 10/10, tilat minimit) | <a href="https://www.etuovi.com/kohde/558992">linkki</a></li>
+<li class="maybe"><span class="num">92.</span> 🆕~ Raasepori, Växär — Storö | 220 k€ | 2,67 ha: päärakennus 60 m² 1990 (3h + makuu-yläkerta) + sivurakennus 40 m² + sauna lattialämmöllä, katto 2018 (vain ~30 m omaa rantaa; vene 10–15 min Boxista/Rösundista) | <a href="https://www.etuovi.com/kohde/378842">linkki</a></li>
+<li class="maybe"><span class="num">93.</span> ~ Hanko, Tränuholmen 7 | 698 k€ | 70 m² 2024 + vierasmökki + sauna (uusi — ei perinnefiilis) | <a href="https://www.etuovi.com/kohde/80471915">linkki</a></li>
+<li class="maybe"><span class="num">94.</span> ~ Kirkkonummi, Kylmälä — Heparintie 78 | 270 k€ | 100 m² 1939 + kunnostettu rantasauna, järvi, 30 min Hki (vain 2 mh) | <a href="https://www.etuovi.com/kohde/2274455">linkki</a></li>
+<li class="maybe"><span class="num">95.</span> ~ Siuntio, Stornäsbyntie 34A | 148 k€ (alle haarukan!) | päämökki + saunamökki + vierasaitta + palju 2025, Karhujärvi — kolmen rakennuksen profiili pikkurahalla | <a href="https://www.etuovi.com/kohde/20581850">linkki</a></li>
+<li class="maybe"><span class="num">96.</span> 🆕~ Salo, Särkisalo — Ruonantie 51 | 199 k€ | 100/135 m² talo 1950 rem. 2021– + palju + uusi ponttonilaituri, 4,31 ha, 70 m omaa merenrantaa (AirBnB-käytössä; pelto/istutusmetsä-tunnelma, ~1 h 50) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/salo/23793748">linkki</a></li>
+<li class="maybe"><span class="num">97.</span> 🆕~ Salo, Teijo — Lanskalantie 121 | 380 k€ | 156 m² arkkitehtitalo 1985 + SAVUSAUNA rannassa (remontoitava), 5 780 m², 40 m merirantaa (Meri-Teijo Golf naapurina) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/salo/24354041">linkki</a></li>
+<li class="maybe"><span class="num">98.</span> 🆕~ Salo, Särkisalo — Ulkoluodontie 58 | 595 k€ | 117 m² + parvi 2007, 3 mh + rantasauna (s+kph+oleskelu) + laituri, ~1 ha, 100 m rantaa + 2,5 ha oma vesialue, rak.oikeutta 138 m² (tyyli moderni huvila; hinta syö budjetin) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/salo/22957539">linkki</a></li>
 </ul>
-
 <h3>Järvet</h3>
 <ul>
-<li class="maybe">~ Hollola, Hämeenkoski — Pyyhtiäntie 150 | 285 k€ | 353 m² ex-leirikeskus, ~12 mh + 60 m² rantasauna, kirkas Pääjärvi (laitosmainen — mutta kapasiteetti/hinta poikkeuksellinen) | <a href="https://www.etuovi.com/kohde/20413344">linkki</a></li>
-<li class="maybe">~ Lahti, Luhtaanmaa — Kalattomantie 47 | 145 k€ | KOLME mökkiä + aitta + saunamökki, matala lapsiranta (&quot;3 perhettä, 3 mökkiä&quot; -idea halvalla; vaatimaton) | <a href="https://www.etuovi.com/kohde/21988218">linkki</a></li>
-<li class="maybe">~ Hämeenlinna, Iittala — Vanajavesi | 520 k€ | 145/238 m², 5 mh + rantasauna, 1,94 ha (tilat riittävät; Vanajaveden vedenlaatu kohtalainen) | <a href="https://www.etuovi.com/kohde/20753867">linkki</a></li>
-<li class="maybe">~ Vihti, Kinavansaari — Hiidenvesi | 295 k€ | OMA 1,1 ha SAARI: mökki + vierasmökki + rantasauna (Hiidenvesi samea + vene) | <a href="https://www.etuovi.com/kohde/620371">linkki</a></li>
-<li class="maybe">~ Hämeenlinna, Lammi — Honkasaari, Kuohijärvi | 648 k€ | 2016 arkkitehtihuvila omalla saarella, kirkas järvi (moderni + vene) | <a href="https://www.etuovi.com/kohde/80361020">linkki</a></li>
-<li class="maybe">~ Padasjoki, Tihmanranta 7 | 399 k€ | 3 mh + rantasauna/venevaja (tyyli moderni luksus) | <a href="https://www.etuovi.com/kohde/1406281">linkki</a></li>
-<li class="maybe">~ Heinola, Koivulahti — Mustalammentie 134 | 397,5 k€ | 170 m² 2009, 5 mh, Konnivesi (omakotitalo-fiilis) | <a href="https://www.etuovi.com/kohde/80510171">linkki</a></li>
-<li class="maybe">~ Hollola, Vehkosaari 18 | 329 k€ | 74/94 m² 2019 + saunarakennus, Vesijärvi (saari, vene ~5 min; moderni) | <a href="https://www.etuovi.com/kohde/37970813">linkki</a></li>
-<li class="maybe">~ Hyvinkää, Ridasjärvi — Kaidanpääntie 446 | 250–290 k€ | 100/120 m² talviasuttava + saunarakennus rannassa, 3 ha, ~50 min Hki (järvi pieni/matala) | <a href="https://www.etuovi.com/kohde/80458309">linkki</a></li>
+<li class="maybe"><span class="num">99.</span> ~ Hollola, Hämeenkoski — Pyyhtiäntie 150 | 285 k€ | 353 m² ex-leirikeskus, ~12 mh + 60 m² rantasauna, kirkas Pääjärvi (laitosmainen — mutta kapasiteetti/hinta poikkeuksellinen) | <a href="https://www.etuovi.com/kohde/20413344">linkki</a></li>
+<li class="maybe"><span class="num">100.</span> ~ Lahti, Luhtaanmaa — Kalattomantie 47 | 145 k€ | KOLME mökkiä + aitta + saunamökki, matala lapsiranta ("3 perhettä, 3 mökkiä" -idea halvalla; vaatimaton) | <a href="https://www.etuovi.com/kohde/21988218">linkki</a></li>
+<li class="maybe"><span class="num">101.</span> ~ Hämeenlinna, Iittala — Vanajavesi | 520 k€ | 145/238 m², 5 mh + rantasauna, 1,94 ha (tilat riittävät; Vanajaveden vedenlaatu kohtalainen) | <a href="https://www.etuovi.com/kohde/20753867">linkki</a></li>
+<li class="maybe"><span class="num">102.</span> ~ Vihti, Kinavansaari — Hiidenvesi | 295 k€ | OMA 1,1 ha SAARI: mökki + vierasmökki + rantasauna (Hiidenvesi samea + vene) | <a href="https://www.etuovi.com/kohde/620371">linkki</a></li>
+<li class="maybe"><span class="num">103.</span> ~ Hämeenlinna, Lammi — Honkasaari, Kuohijärvi | 648 k€ | 2016 arkkitehtihuvila omalla saarella, kirkas järvi (moderni + vene) | <a href="https://www.etuovi.com/kohde/80361020">linkki</a></li>
+<li class="maybe"><span class="num">104.</span> ~ Padasjoki, Tihmanranta 7 | 399 k€ | 3 mh + rantasauna/venevaja (tyyli moderni luksus) | <a href="https://www.etuovi.com/kohde/1406281">linkki</a></li>
+<li class="maybe"><span class="num">105.</span> ~ Heinola, Koivulahti — Mustalammentie 134 | 397,5 k€ | 170 m² 2009, 5 mh, Konnivesi (omakotitalo-fiilis) | <a href="https://www.etuovi.com/kohde/80510171">linkki</a></li>
+<li class="maybe"><span class="num">106.</span> ~ Hollola, Vehkosaari 18 | 329 k€ | 74/94 m² 2019 + saunarakennus, Vesijärvi (saari, vene ~5 min; moderni) | <a href="https://www.etuovi.com/kohde/37970813">linkki</a></li>
+<li class="maybe"><span class="num">107.</span> ~ Hyvinkää, Ridasjärvi — Kaidanpääntie 446 | 250–290 k€ | 100/120 m² talviasuttava + saunarakennus rannassa, 3 ha, ~50 min Hki (järvi pieni/matala) | <a href="https://www.etuovi.com/kohde/80458309">linkki</a></li>
+<li class="maybe"><span class="num">108.</span> 🆕~ Kärkölä, Lappila — Haapalantie 119/5 (Oriharonjärvi) | 250 k€ | VIISI erillistä pyöröhirsimökkiä (à ~50 m²: tupa, kk, mh, kph, sauna, parvi) + 2 rakennuspaikkaa, 1 ha, ~1 h 10 (EI omaa rantaa — oikeus järveen + yhteislaituri) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/karkola/24460232">linkki</a></li>
+<li class="maybe"><span class="num">109.</span> 🆕~ Kärkölä, Lappila — Haapalantie 119/1 | 215 k€ | 100 m² pyöröhirsi 1989, 2 mh + 2 parvea, OMA RANTA 40 m (tontti 2 600 m², naapurina yllä oleva mökkiryhmä → 💡 yhdistelmäosto 119/1+119/5 = 465 k€: 6 mökkiä + oma ranta) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/karkola/24418023">linkki</a></li>
+<li class="maybe"><span class="num">110.</span> 🆕~ Hollola, Paimela — Kalliosivuntie 9 (Vesijärvi) | 269 k€ | päämökki 53 m² + aitta 2 makuusopella + saunarakennus saunatuvalla + OMA PIKKUSAARI kaarisillalla + palju, suojaisa uimapoukama, ~1 h 30 (nukkujia ~6–8; 4 307 m²) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hollola/24236734">linkki</a></li>
+<li class="maybe"><span class="num">111.</span> 🆕~ Hämeenlinna, Hauho — Kotkijärventie 139 | 169 k€ | hirsipäärakennus 1984 + rantasauna 2006 + lämpöeristetty vierashuone + ERILLINEN YKSIÖ + autotalli (yht. 175 m²), 60 m rantaa (pieni järvi; 4 900 m²; kuivakäymälätaso) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hameenlinna/24565627">linkki</a></li>
+<li class="maybe"><span class="num">112.</span> 🆕~ Hämeenlinna, Okerla (Hauho) — Työsaari | 159 k€ | KAKSI talviasuttavaa mökkiä (vierasmökin parvella ~10 nukkumapaikkaa), 1,73 ha OMA SAARI, rantaa molemmin puolin, iso laituri (ei tieyhteyttä — vene/työlautta; saunaa ei mainita; "vaatii puuhastelijaa") | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hameenlinna/21131247">linkki</a></li>
+<li class="maybe"><span class="num">113.</span> 🆕~ Hämeenlinna, Miemala — Katiskoskentie 420 | 159 k€ | hirsimökki 1944 + pyöröhirsiaitta 1980 + uusi saunarakennus 2015–18, 1,68 ha, 200 m rantaviivaa — mutta JOEN rannalla | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hameenlinna/24534355">linkki</a></li>
+<li class="maybe"><span class="num">114.</span> 🆕~ Hollola, Kalliola — Ali-Tohkasentie 73 (Vesijärvi) | 475 k€ | 103 m² modernisoitu, 5 007 m², 174 m omaa rantaa + 5,4 ha vesialue (vain 1 mh + parvi — kapasiteetti/hinta epäsuhta) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hollola/24598891">linkki</a></li>
+<li class="maybe"><span class="num">115.</span> 🆕~ Padasjoki, Arrakoski — Tevännintie 19 | 165 k€ | 266 m² hirsirakennus (1800-l. meijerin asuntola, 6h), 9 150 m² määräala, ~200 m rantaviivaa (+mahd. lisärantatontti) — valtava kapasiteetti/ranta halvalla (ei rantasaunaa; kunto+järvi selvitettävä; ~2 h) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/padasjoki/24501841">linkki</a></li>
+<li class="maybe"><span class="num">116.</span> 🆕~ Lahti, Nastola — Kirjussaari 5 &amp; 9 | 186 + 158 k€ | KAKSI naapurikiinteistöä myynnissä samassa saaressa (arkkitehtikohteet 2002 ja 1968), molemmissa oma ranta — 💡 yhdistelmäosto ~344 k€ = 2 taloa + rantaa itään ja länteen (venematka 400 m; yksinään liian pienet) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lahti/24514359">linkki</a> + <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lahti/24513954">linkki</a></li>
+<li class="maybe"><span class="num">117.</span> 🆕~ Iitti, Vuolenkoski — Ojassuontie 148 | 350 k€ | Salvos-hirsimökit 2020: päämökki + saunarakennus + aitta, 8 nukkujaa, 2,68 ha, kovapohjainen hiekkaranta, rak.oikeutta 200 k-m² (uusi, ei patinaa; Kymijoki ei järvi) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/iitti/24418003">linkki</a></li>
+<li class="maybe"><span class="num">118.</span> 🆕~ Iitti, Vuolenkoski — Viinamäentie 50 | 250 k€ | 2017: mökki + sauna + 2 makuuaittaa, 8 nukkujaa, hiekkaranta (35 m rantaa, 5 000 m²; joki) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/iitti/24414444">linkki</a></li>
+<li class="maybe"><span class="num">119.</span> 🆕~ Iitti, kk — Sorronniemenkuja 8 | 249 k€ | 64 m², 2 mh, 52,5 m omaa rantaa kirkasvetisellä Pyhäjärvellä, veneellä Päijänteelle (yksi rakennus — kapasiteetti ei riitä) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/iitti/24589097">linkki</a></li>
+<li class="maybe"><span class="num">120.</span> 🆕~ Heinola, Vuolintie 254 c (Paistjärvi) | 398 k€ | 2017: 3 mh + parvi + rantasauna jossa vierastupa+parvi + talousrak. + huvimaja (moderni; ~2 h rajalla) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/heinola/24519165">linkki</a></li>
+<li class="maybe"><span class="num">121.</span> 🆕~ Heinola, Tontuntie 176 C | 490 k€ | hirsitalo 2003 (saneerattu 2020–21, maalämpö) + saunarakennus tuvalla, syvä kalaisa Ala-Rääveli (saneerattu-moderni; ~2 h) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/heinola/24497996">linkki</a></li>
+<li class="maybe"><span class="num">122.</span> 🆕~ Heinola, kk — Kelloniementie 61 | 179 k€ | Konnivesi, rantasauna veden äärellä, hyvä tie (vain tupa + 1 mh, 57 m²) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/heinola/24522564">linkki</a></li>
+<li class="maybe"><span class="num">123.</span> 🆕~ Padasjoki, Kellosalmi — Vähän-Vankostentie 67 | 225 k€ | 81 m², Päijänne-ranta, huvimaja (1 mh + saunakamari + parvi — pieni) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/padasjoki/24464407">linkki</a></li>
+<li class="maybe"><span class="num">124.</span> 🆕~ Padasjoki, Nyystölä — Räväkistönranta 22 | 425 k€ | 2024 uudistettu + aitta + SAVUSAUNA + kesäkeittiö, Päijänne (tyyli vaalea-moderni, ei perinnefiilis) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/padasjoki/24444847">linkki</a></li>
+<li class="maybe"><span class="num">125.</span> 🆕~ Lahti, Nastola — Jussinraitti 58 | 227 k€ | hirsi 1995, 62,5 m² + rantasauna + venevaja, iso Salajärvi, ~1 h 15 (tontti 3 030 m²; ~2 mh) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lahti/24618738">linkki</a></li>
+<li class="maybe"><span class="num">126.</span> 🆕~ Lohja, Röylä — Hiidenniementie 104 | 499 k€ | 142 m² Honka-laajennettu 1983/2007, 6h + rantasauna tuvalla, 45 min Hki (Hiidenvesi samea; huvilamainen) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/24420124">linkki</a></li>
+<li class="maybe"><span class="num">127.</span> 🆕~ Lohja, Lohjansaari — Rekiniementie 122 | 398 k€ | hirsihuvila 2002, 114 m² + vierashuone + autotalli, oma ranta Lohjanjärvi (mh-määrä epäselvä; 2002-huvila) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/23239878">linkki</a></li>
+<li class="maybe"><span class="num">128.</span> 🆕~ Lohja, Radus (Pusula) — Pusulantie 292 | 168 k€ | peruskorjattu talviasuttava hirsimökki 42 m² + rantasauna, oma rantatontti 5 000 m² (pieni; järvi ei ilmoituksessa nimetty) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/lohja/22580079">linkki</a></li>
+<li class="maybe"><span class="num">129.</span> 🆕~ Vihti, Vihtijärvi — Vehmaantie | 249 k€ | v. 1945 perinnetalo (vaalittu) + 1960-l. rantasauna + venevaja + varasto, Lapoojärvi (tontti 2 750 m², rantakaista kapea) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/vihti/24581601">linkki</a></li>
+<li class="maybe"><span class="num">130.</span> 🆕~ Vihti, Olkkala — Siirinmäentie 24 | 269 k€ | uniikki ateljeehuvila 1948 Averiajärven rannalla, pieteetillä kunnostettu — TUNNELMA 10/10 (mutta 1–2 mh + Averian vedenlaatu kohtalainen) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/vihti/24552137">linkki</a></li>
+<li class="maybe"><span class="num">131.</span> 🆕~ Vihti, Pääkslahti — Hiisiniementie 64 a | 259 k€ | makuupaikat 9:lle, 70 m rantaa etelään (osin hiekkaa), rantasauna, alle tunti Hki (Hiidenvesi samea; tontti 2 740 m²) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/vihti/24457342">linkki</a></li>
+<li class="maybe"><span class="num">132.</span> 🆕~ Hattula, Tyrväntö — Ihanasuontie 69 | 169 k€ | 1,4 ha + 200 m omaa rantaa Vanajaveden Lusinselällä + rantasauna (päämökki vaatimaton 20 m² 1960-l. → käytännössä rakennuspaikka) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/hattula/24564956">linkki</a></li>
+<li class="maybe"><span class="num">133.</span> 🆕~ Tammela, Kaukjärvi — Kaakkotie 178 | 170 k€ | päämökki (remontoitu) + saunamökki, oma ranta, 0,5 ha määräala, suojaisa (vain 1 mh — ei riitä) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/tammela/24490064">linkki</a></li>
+<li class="maybe"><span class="num">134.</span> 🆕~ Loppi, Topeno — Pikkasenpolku 7 | 229 k€ | Honka-pyöröhirsi 2005, 3h+parvi, 80 m omaa rantaa (Myllylammi tummavetinen, osin mutapohja; 1 rakennus) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/loppi/23694032">linkki</a></li>
+<li class="maybe"><span class="num">135.</span> 🆕~ Kouvola, Jaala — Mäntyharjuntie 431 | 355 k€ | 84 m² peruskorjattu 1990–91, 1,19 ha, kovapohjainen oma ranta puhtaalla Iso-Ruhmaksella (aivan 2 h rajalla; mh-määrä epäselvä) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/kouvola/24381723">linkki</a></li>
+<li class="maybe"><span class="num">136.</span> 🆕~ Kouvola, Valkeala — Rapolankuja 9 | 150 k€ | 94 m², 2 mh + rantasauna vesirajassa + autotalli/vierashuone, Rapojärvi (~1 h 50; tontti 3 690 m²) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/kouvola/24478963">linkki</a></li>
+<li class="maybe"><span class="num">137.</span> 🆕~ Nurmijärvi, Klaukkala — Klaukkalantie 100 | 475 k€ | suojeltu (Sr-3) huvila 1929, remontoitu, 3 mh + rantasauna laiturilla, yli 50 m rantaa Valkjärvellä, 30 MIN HKI (tontti 3 000 m² tien varrella; Valkjärven vedenlaatu vaihteleva) | <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/nurmij%C3%A4rvi/24191002">linkki</a></li>
 </ul>
-
-<p>(+ ~60 muuta rajatapausta agenttien raporteissa — pääsyyt: 1–2 mh, pieni tontti, samea/pieni vesistö, omakotitalomaisuus, rantaomistus epäselvä.)</p>
-
+<p>(+ ~60 muuta rajatapausta alkuperäisen kartoituksen agenttiraporteissa — pääsyyt: 1–2 mh, pieni tontti, samea/pieni vesistö, omakotitalomaisuus, rantaomistus epäselvä.)</p>
 <hr>
-
+<h2>🪦 POISTUNEET MYYNNISTÄ (havaittu 31.7. tarkistuksissa)</h2>
+<p>Nämä olivat listalla mutta ilmoitus on poistunut molemmista portaaleista — todennäköisesti myyty tai vedetty pois. Jos jokin kiinnostaa erityisesti, välittäjältä voi kysyä perään; seurataan palaavatko markkinoille.</p>
+<ul>
+<li class="gone">🪦 Sipoo, Storkobben | 565 k€ | oli longlistin kärkinosto (oma saari, 300 m rantaa)</li>
+<li class="gone">🪦 Sipoo, Störjeviken | 395 k€ | 145 m² päätalo 10–16 hengelle</li>
+<li class="gone">🪦 Loviisa, Mästlax — Käldö 534 | 298 k€</li>
+<li class="gone">🪦 Loviisa, Kulla — Grönauddenintie 76 | 490 k€</li>
+<li class="gone">🪦 Loppi, Topeno — Kaartjärvi | 159 k€ | oli kärkinosto (150–200 m rantaa + 1950-l. rantasauna)</li>
+<li class="gone">🪦 Vihti, Tervalampi | 177 k€</li>
+<li class="gone">🪦 Hämeenlinna, Katumajärvi — Kappolan Rantatie 174 | 268 k€ | poistunut sekä Etuovista että Oikotieltä</li>
+<li class="gone">🪦 Loviisa, Svartholmen 16 | 240 k€ (oli rajatapaus)</li>
+<li class="plain">Tarkistetut vanhat langat, kaikki poistuneet: Salo Salmijärvi 138 k€ (vain 20 m² saunamökki, 0 mh — ei olisi riittänyt), Lohja Enäjärvi/Pirttikuja 46 158 k€ (26 m² yksiö — ei olisi riittänyt), Lohja Multaanpää-saari 245 k€ (3 rakennusta + rantasauna — olisi ollut rajatapaus; pidetään silmällä palaako)</li>
+</ul>
+<hr>
 <h2>✗ EI SOVI — tarkastettu ja hylätty (yhteenveto)</h2>
-
 <ul>
-<li>Ei omaa rantaa / vain rantaoikeus tai yhteisranta: ~45 kohdetta (mm. Rönnäsin golfalue, Emäsalon uudiskohteet, Messilä, Vierumäki-resort, Nordcenter, Kisakallio)</li>
-<li>Omakotitalomaiset / modernit luksushuvilat omalla rannalla: ~15 (mm. Paksalo 620 k€, Irjala 447 k€, Ojakkala 548 k€, Sorronniemenkatu 528 k€, Pohjankuru 699 k€, Medvästö 670 k€)</li>
-<li>Liian pienet (alle ~45 m² ilman lisärakennuksia/rak.oikeutta): ~15</li>
-<li>Purku-/saneerauskuntoiset: 3 (mm. Vättlaxintie 171, Häggvikintie 24B)</li>
-<li>Yhteisö-/lomakyläkohteet (naapurit vieressä): ~10 (mm. Estskär 5 huvilaa, Kuiva Hevonen KOy)</li>
-<li>Yli 2 h: Kemiönsaari + Heinolan koilliskulma</li>
-<li>Hintahaarukan ali/yli mutta huomionarvoiset: Ervin huvila Sammatti 1,07 M€ (373 m rantaa); Iitti Ritamäki 840 k€ (1910 huvilakokonaisuus Konnivedellä); Heinola Korpinmaantie 745 k€ (2021 + rantasauna Ruotsalaisella → seuraa hinnanalennuksia); Siuntio Stornäsbyntie 148 k€ (ks. yllä)</li>
+<li class="plain">Ei omaa rantaa / vain rantaoikeus tai yhteisranta: ~45 kohdetta (mm. Rönnäsin golfalue, Emäsalon uudiskohteet, Messilä, Vierumäki-resort, Nordcenter, Kisakallio)</li>
+<li class="plain">Omakotitalomaiset / modernit luksushuvilat omalla rannalla: ~15 (mm. Paksalo 620 k€, Irjala 447 k€, Ojakkala 548 k€, Sorronniemenkatu 528 k€, Pohjankuru 699 k€, Medvästö 670 k€)</li>
+<li class="plain">Liian pienet (alle ~45 m² ilman lisärakennuksia/rak.oikeutta): ~15</li>
+<li class="plain">Purku-/saneerauskuntoiset: 3 (mm. Vättlaxintie 171, Häggvikintie 24B)</li>
+<li class="plain">Yhteisö-/lomakyläkohteet (naapurit vieressä): ~10 (mm. Estskär 5 huvilaa, Kuiva Hevonen KOy)</li>
+<li class="plain">Oikotie-täysinventaarion uudet hylyt (31.7.): ~85 kohdetta, mm. Heinolan Vierumäki-resort (15 kpl), Messilän yhtiömuotoiset, lomaosakkeet (mm. Dalkarö "Storön" 12 k€ — EI oma kiinteistö), pikkutontit ilman rantaa</li>
+<li class="plain">Yli 2 h: Kemiönsaari, Heinolan koilliskulma, Kouvolan itäosa (~12 kohdetta; rajatapauksena Huhdasjärven "mökkikylä" 450 k€, useita mökkejä Niskajärvellä, ~2 h 15 → katsottavissa jos raja joustaa: <a href="https://asunnot.oikotie.fi/myytavat-loma-asunnot/kouvola/23230462">linkki</a>)</li>
+<li class="plain">Hintahaarukan ali/yli mutta huomionarvoiset: Ervin huvila Sammatti 1,07 M€ (373 m rantaa); Iitti Ritamäki 840 k€ (1910 huvilakokonaisuus Konnivedellä); Heinola Korpinmaantie 745 k€ (2021 + rantasauna Ruotsalaisella → seuraa hinnanalennuksia); Siuntio Stornäsbyntie 148 k€ (nro 95)</li>
 </ul>
-
 <hr>
-
-<h2>Kattavuus ja rehelliset aukot</h2>
-
+<h2>Kattavuus — mikään ei mene sormien läpi</h2>
+<p>Aukot suljettu 31.7. illalla neljällä täydennyshaulla:</p>
 <ul>
-<li><strong>Etuovi: käytännössä täysi kattavuus</strong> — kaikki kuntasivut sivutuksineen</li>
+<li class="plain"><strong>Etuovi: täysi kattavuus</strong> — kaikki kuntasivut sivutuksineen (~790</li>
 </ul>
-<p>  (~790 ilmoitusta), hintahaarukan kohteista rantatiedot varmistettu   ilmoituksilta (~180 avattu).</p>
+<p>ilmoitusta), hintahaarukan kohteista rantatiedot varmistettu ilmoituksilta.</p>
 <ul>
-<li><strong>Oikotie: hyvä muttei aukoton</strong> — listasivut ovat botti-estettyjä;</li>
+<li class="plain"><strong>Oikotie: nyt täysi kattavuus</strong> — koko inventaario haettu suoraan</li>
 </ul>
-<p>  katettu hakurajapinnalla (länsirannikko: koko kanta 194 korttia   ristiinverrattu) ja hakukonepoiminnalla (muut alueet). Oikotie-only   -kohteita voi puuttua etenkin: Salo, Hämeenlinna, Orimattila, Mäntsälä   (alueiden järvet tosin pieniä — riski matala).</p>
+<p>hakurajapinnasta (cards-API) kaikista alueen kunnista: länsirannikko (194 korttia) + Salo/Hämeenlinna/Hollola/Kärkölä/Orimattila/Mäntsälä/Hausjärvi (202 hintahaarukassa) + Sipoo→Loviisa→järvialueet, 19 kuntaa (551 korttia, 202 haarukassa). Ei enää hakukonepoiminnan varassa. Menetelmä toistettavissa: user/get → OTA-token → /api/cards?cardType=102.</p>
 <ul>
-<li>Tarkistamatta jääneet langat: Salon [O] &quot;Salmijärvi 2,64 ha / 200 m rantaa&quot;</li>
+<li class="plain"><strong>Tarkistamattomat langat: kaikki 4 suljettu</strong> — Salmijärvi, Enäjärvi,</li>
 </ul>
-<p>  (ei ID:tä), Lohjan [O] &quot;Enäjärvi 158 k€ hiekkaranta&quot; (ei ID:tä), Lohjan   Multaanpää-saaren hinta, Dalkarö Storön rantatieto.</p>
+<p>Multaanpää poistuneet myynnistä (yksikään ei olisi ollut ⭐); Dalkarö "Storön" = lomaosake → lopullinen ✗.</p>
 <ul>
-<li>Vain Etuovi + Oikotie: tori.fi/FB-yksityismyynnit eivät sisälly.</li>
-<li>Hinnat per 31.7.2026; tarjouskaupoissa lähtöhinta voi ylittyä.</li>
+<li class="plain"><strong>Tori.fi: ei enää mökkikanava</strong> — kiinteistöilmoitukset siirtyneet</li>
 </ul>
-
-<footer><p><em>Koonnut Claude Markon ohjauksessa 31.7.2026.</em></p></footer>
+<p>Oikotielle (sama konserni) → katettu. Huutokaupat.com käyty läpi (41 kohdetta, 0 uutta). Asuntokaupoille.com yms. tarkistettu (kaikki alle 110 k€ -tasoa).</p>
+<ul>
+<li class="plain"><strong>Jäljellä olevat aidot katveet:</strong> (1) Facebook Marketplace/mökkiryhmät ja</li>
+</ul>
+<p>välittäjien hiljainen myynti — arvio ~5–10 % tarjonnasta, tehokkain kattaa ihmistyöllä (FB-ryhmät + soitto 3–4 välittäjälle ostotoimeksiannolla); (2) rantakohteet jotka on listattu omakotitalona/maatilana/tonttina eikä loma-asuntona; (3) Kouvolan &gt;2 h -reuna; (4) uusien API-kohteiden kuvia ei ole katsottu — tunnelma-arviot perustuvat teksteihin; (5) inventaario on hetkikuva 31.7. — markkina liikkuu viikoittain, uusintaskannaus helppo ajaa.</p>
+<ul>
+<li class="plain">Hinnat per 31.7.2026; tarjouskaupoissa lähtöhinta voi ylittyä.</li>
+</ul>
+<footer><p><em>Koonnut Claude Markon ohjauksessa 31.7.2026 (v2 — aukot suljettu, numeroitu palautteelle).</em></p></footer>
 </main>
 </body>
 </html>
